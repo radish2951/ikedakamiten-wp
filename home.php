@@ -53,22 +53,22 @@
 
     <section id="news">
         <h2 class="section-title">ニュース</h2>
-        <ul id="news-index">
-            <li class="single-news">
+<?php
+if ( have_posts()) {
+    while ( have_posts() ) {
+        the_post();
+        if ( in_category( 'news' ) ) {
+?>
         <article>
-            <h3>ウェブサイトをオープンしました！</h3>
-            <p>2018年4月1日</p>
-            <p>こんにちは。これは仮のテキストです。これは仮のテキストです。これは仮のテキストです。</p>
+<?php the_title('<h3>', '</h3>'); ?>
+<?php the_date(); ?>
+<?php the_content(); ?>
         </article>
-            </li>
-            <li class="single-news">
-        <article>
-            <h3>お盆休みのお知らせ</h3>
-            <p>2018年5月1日</p>
-            <p>お盆休みを取得します。お盆休みを取得します。お盆休みを取得します。お盆休みを取得します。</p>
-        </article>
-            </li>
-        </ul>
+<?php
+        }
+    }
+}
+?>
     </section>
 </main>
 <?php get_footer(); ?>

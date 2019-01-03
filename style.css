@@ -190,51 +190,37 @@ ul li {
 
 /* News */
 #news {
-}
-
-#news .full-inner {
-    width: 100%;
-    max-width: 900px;
-}
-
-#news ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-#news ul li {
-    width: 45%;
-    height: 500px;
+#news h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-#news ul li article h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 12px;
+#news article {
+    width: 30%;
 }
-
-#news ul li article p {
-    margin-top: 12px;
-    line-height: 24px;
-}
-
 
 
 /* Footer */
 #footer {
     background: gray;
     color: white;
-    padding: 50px 150px;
+    padding: 50px 16vw;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 0 auto;
+    margin-top: 100px;
 }
 
 #footer nav {
     font-size: 16px;
 }
-    
+
 #footer #footer-company-information h1 {
     font-size: 24px;
     margin-bottom: 12px;

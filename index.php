@@ -11,7 +11,7 @@ get_header();
 			// Load posts loop.
 			while ( have_posts() ) {
 				the_post();
-                the_title();
+                the_title('<h2>', '</h2>');
                 the_content();
 			}
 
