@@ -15,6 +15,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 p, h1, h2, h3, h4, h5, h6, ul, li {
@@ -223,28 +224,21 @@ ul li {
 #footer {
     background: gray;
     color: white;
-    padding: 50px 0;
-}
-
-#footer #footer-contents {
-    width: 100%;
-    max-width: 900px;
+    padding: 50px 150px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin: 0 auto;
 }
 
-#footer #footer-contents nav {
+#footer nav {
     font-size: 16px;
 }
     
-#footer #footer-contents #footer-company-information h1 {
+#footer #footer-company-information h1 {
     font-size: 24px;
     margin-bottom: 12px;
 }
-#footer #footer-contents #footer-company-information p {
+#footer #footer-company-information p {
     font-size: 16px;
 }
-
-
