@@ -15,7 +15,6 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 p, h1, h2, h3, h4, h5, h6, ul, li {
@@ -59,6 +58,9 @@ ul li {
     margin: 10px;
     font-size: 16px;
     font-weight: bold;
+}
+
+nav a {
     color: white;
 }
 
@@ -227,4 +229,12 @@ ul li {
 }
 #footer #footer-company-information p {
     font-size: 16px;
+}
+
+
+
+main#singular-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 200px auto;
 }

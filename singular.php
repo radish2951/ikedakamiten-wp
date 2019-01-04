@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<main id="singular-content">
 
 <?php
 if ( have_posts() ) {
@@ -10,4 +11,5 @@ if ( have_posts() ) {
 }
 ?>
 
+</main>
 <?php get_footer(); ?>
