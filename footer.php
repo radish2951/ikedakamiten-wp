@@ -16,7 +16,6 @@ const fullSections = document.getElementsByClassName('full');
 for (let i = 0; i < fullSections.length; i++) {
     fullSections[i].style.height = window.innerHeight + 'px';
 }
-
 </script>
 
 </body>

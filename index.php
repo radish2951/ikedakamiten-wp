@@ -1,29 +1,18 @@
+<?php get_header(); ?>
+
+<main id="main">
+
 <?php
-get_header();
+if ( have_posts() ) {
+    while ( have_posts() ) {
+        the_post();
+        the_title('<h2><a href="' . get_permalink() . '">', '</a></h2>');
+        the_date();
+        the_content();
+    }
+}
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+</main>
 
-		<?php
-		if ( have_posts() ) {
-
-			// Load posts loop.
-			while ( have_posts() ) {
-				the_post();
-                the_title('<h2>', '</h2>');
-                the_content();
-			}
-
-		} else {
-
-            echo('Hello');
-
-		}
-		?>
-
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
-
-<?php
-get_footer();
+<?php get_footer(); ?>

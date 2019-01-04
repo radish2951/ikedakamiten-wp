@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main id="content">
+<main id="main-home">
     <section id="main-image" class="full">
         <div class="full-inner">
         <div id="company-name">

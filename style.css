@@ -233,8 +233,8 @@ nav a {
 
 
 
-main#singular-content {
+main#main {
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 200px auto;
 }
