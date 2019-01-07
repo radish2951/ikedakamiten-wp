@@ -23,7 +23,7 @@
                 <img src="http://blog-imgs-70.fc2.com/k/f/1/kf1955story/2005_ph21.jpg">
             </div>
             <div class="product-detail">
-                <h2>世界に一つだけの提灯。</h2>
+                <h2>世界に一つの提灯。</h2>
                 <p>秋田竿燈まつりで使用される提灯です。オーダーメイドにも対応いたします。世界に1つしかない提灯を作ってみませんか？</p>
                 <a href="">もっと詳しく</a>
             </div>
@@ -59,11 +59,11 @@ if ( have_posts()) {
         the_post();
         if ( in_category( 'news' ) ) {
 ?>
-        <article>
-<?php the_title('<h3>', '</h3>'); ?>
-<?php the_date(); ?>
+<article>
+<?php the_title('<h3 class="title"><a href="' . get_permalink() . '">', '</a></h3>'); ?>
+<?php the_date('', '<p class="date"><time>', '</time></p>'); ?>
 <?php the_content(); ?>
-        </article>
+</article>
 <?php
         }
     }

@@ -15,6 +15,12 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
+    transition: color 200ms;
+}
+
+a:hover {
+    color: lightgray;
 }
 
 p, h1, h2, h3, h4, h5, h6, ul, li {
@@ -26,6 +32,26 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 ul li {
     list-style: none;
 }
+
+
+
+
+
+
+
+article .title {
+    margin: 20px 0;
+}
+
+article p.date {
+    margin: 20px 0;
+}
+
+
+
+
+
+
 
 
 
@@ -49,9 +75,9 @@ ul li {
 
 #header nav ul {
     width: 100%;
-    max-width: 900px;
+    max-width: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #header nav ul li {
@@ -174,15 +200,27 @@ nav a {
 }
 
 #products section .product-detail a {
-    background: brown;
-    padding: 12px;
-    display: block;
-    margin: 50px auto auto auto;
-    width: 180px;
-    text-align: center;
     font-size: 21px;
     color: white;
     text-decoration: none;
+    box-sizing: border-box;
+    transition: color 200ms, border-radius 200ms, background 200ms;
+
+    background: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto auto auto;
+    width: 180px;
+    height: 54px;
+
+}
+
+#products section .product-detail a:hover {
+    border: 2px solid brown;
+    border-radius: 8px;
+    background: white;
+    color: brown;
 }
 
 #products section#fusuma {
@@ -192,20 +230,30 @@ nav a {
 
 /* News */
 #news {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #news h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
+    font-size: 50px;
 }
 
 #news article {
-    width: 30%;
+    width: 45%;
 }
+
+#news article h3 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
 
 
 /* Footer */
@@ -236,5 +284,14 @@ nav a {
 main#main {
     width: 100%;
     max-width: 700px;
-    margin: 200px auto;
+    margin: 150px auto;
+}
+
+main#main article {
+    margin: 120px auto;
+}
+
+main#main article .title {
+    font-size: 42px;
+    /* text-align: center; */
 }
