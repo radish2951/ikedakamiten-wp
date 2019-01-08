@@ -1,20 +1,16 @@
 <?php get_header(); ?>
 <main id="main-home">
-    <section id="main-image" class="full">
-        <div class="full-inner">
+    <section id="main-image">
         <div id="company-name">
             <h1>有限会社 池田紙店</h1>
             <p>Ikeda Kamiten Co.,Ltd.</p>
         </div>
-        </div>
     </section>
 
-    <section id="message" class="full">
-        <div class="full-inner">
-            <h2 class="section-title">秋田の心を、未来へ。</h2>
-            <p>秋田県秋田市に古くから伝わる伝統「秋田竿燈まつり」。私たちはその担い手として、提灯づくりを通じ、伝統を守り、受け継いでいます。</p>
-            <p>襖紙・障子紙など各種表装材料も豊富に取り扱っております。伝統と現代の美が調和したインテリアを、お客様のニーズに合わせてご提案いたします。</p>
-        </div>
+    <section id="message">
+        <h2 class="section-title">秋田の心を、未来へ。</h2>
+        <p>秋田県秋田市に古くから伝わる伝統「秋田竿燈まつり」。私たちはその担い手として、提灯づくりを通じ、伝統を守り、受け継いでいます。</p>
+        <p>襖紙・障子紙など各種表装材料も豊富に取り扱っております。伝統と現代の美が調和したインテリアを、お客様のニーズに合わせてご提案いたします。</p>
     </section>
 
     <section id="products">

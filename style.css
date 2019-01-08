@@ -38,12 +38,11 @@ ul li {
 
 
 
-
-article .title {
-    margin: 20px 0;
+nav a {
+    color: white;
 }
 
-article p.date {
+article .title, p.date {
     margin: 20px 0;
 }
 
@@ -57,14 +56,13 @@ article p.date {
 
 /* Header */
 #header {
-    position: fixed;
     width: 100%;
+    position: fixed;
     top: 0;
     z-index: 100;
 }
 
 #header nav {
-    width: 100%;
     height: 50px;
     display: flex;
     flex-shrink: 0;
@@ -74,140 +72,225 @@ article p.date {
 }
 
 #header nav ul {
-    width: 100%;
-    max-width: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #header nav ul li {
-    margin: 10px;
+    margin: 0 20px;
     font-size: 16px;
     font-weight: bold;
 }
 
-nav a {
-    color: white;
+
+
+
+@media screen and (max-width: 768px) {
+    header#header {
+        width: 64px;
+        height: 64px;
+        overflow: hidden;
+        right: 0;
+
+        transition: width 500ms, height 500ms;
+    }
+
+    header#header.full {
+        width: 100%;
+        height: 100%;
+    }
+
+    header#header nav {
+        background: transparent;
+        transition: background 500ms, width 500ms, height 500ms;
+    }
+
+    header#header nav::before {
+        color: gray;
+        font-size: 60px;
+        content: "=";
+    }
+
+    header#header nav :nth-child(n+1) {
+        opacity: 0;
+        transition: opacity 500ms;
+    }
+
+    header#header.full nav {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+    }
+
+    header#header.full nav::before {
+        display: none;
+    }
+
+    header#header.full nav :nth-child(n+1) {
+        opacity: 1;
+    }
+
+    header#header nav ul {
+        flex-flow: column;
+    }
+
+    header#header nav ul li {
+        width: 100%;
+        font-size: 24px;
+        font-weight: normal;
+        margin: 10px 0;
+        text-align: center;
+    }
+
 }
 
 
 
-/* Full Section Global Settings */
-.full {
+
+/* main-image */
+section#main-image {
+    overflow: hidden;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Akita_Kanto_Festival_2017.jpg/1920px-Akita_Kanto_Festival_2017.jpg);
+    background-size: cover;
+    background-position: center;
+
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100vh;
 }
 
-.full .section-title {
-    font-size: 50px;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 60px;
-}
-
-
-
-/* main-image */
-#main-image {
-    width: 100%;
-    overflow: hidden;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Akita_Kanto_Festival_2017.jpg/1920px-Akita_Kanto_Festival_2017.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#company-name {
+section#main-image #company-name {
     font-family: serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
-    text-align: right;
-    padding: 50px 100px;
-    margin: auto;
 
-    width: 100px;
+    width: 300px;
+    height: 80%;
 
     writing-mode: vertical-rl;
     position: relative;
 
-    line-height: 80px;
+    text-align: right;
 
     top: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 0 80px 30px 80px;
 }
 
-#company-name h1 {
+section#main-image #company-name h1 {
     font-size: 48px;
-    font-weight: normal;
-    margin: 0;
     letter-spacing: 8px;
-
-
+    height: 100%;
 }
 
-#company-name p {
+section#main-image #company-name p {
     font-size: 16px;
     letter-spacing: 5px;
+    height: 100%;
 }
 
 
-@media screen and (width <= 768px) {
+@media screen and (max-width: 768px) {
+    section#main-image #company-name {
+        width: 80%;
+        max-width: 500px;
+        height: 70%;
+        min-height: 400px;
+        padding: 0 20% 30px 20%;
+        top: 0;
+    }
+
+    section#main-image #company-name h1 {
+        font-size: 36px;
+        letter-spacing: 4px;
+    }
+
+    section#main-image #company-name p {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
 }
 
 
 
 
 /* Message */
-#message {
+section#message {
+    text-align: center;
+    margin: 150px 0;
 }
 
-#message .section-title {
+section#message h2 {
     font-size: 90px;
     margin-bottom: 70px;
 }
 
-#message p {
+section#message p {
     width: 500px;
+    max-width: 98%;
     margin: 30px auto;
     font-size: 18px;
-    text-align: left;
+    text-align: justify;
     line-height: 44px;
 }
 
+@media screen and (max-width: 768px) {
+    section#message {
+        margin-top: 30px;
+    }
+
+    section#message h2 {
+        text-align: justify;
+        word-wrap: break-word;
+        font-size: 54px;
+        max-width: 90%;
+        margin: 150px auto 70px auto;
+    }
+
+    section#message p {
+        max-width: 90%;
+    }
+}
 
 
 /* Products */
-#products {
-    /* background: lightgray; */
+section#products {
 }
 
-#products section {
+section#products section {
     display: flex;
-    flex-wrap: nowrap;
-    margin: 100px 100px;
+    flex-wrap: row nowrap;
+    width: 900px;
+    max-width: 100%;
+    margin: 160px auto;
 }
 
-#products section .product-images {
-    width: 400px;
-    margin: 40px;
+section#products section .product-images {
+    width: 100%;
+    flex: 2;
 }
 
-#products section .product-images img {
+section#products section .product-images img {
     width: 100%;
 }
 
-#products section .product-detail {
-    margin: 40px;
+section#products section .product-detail {
+    width: 100%;
+    flex: 3;
 }
 
-#products section .product-detail h2 {
+section#products section .product-detail h2 {
     font-size: 60px;
 }
 
-#products section .product-detail a {
+section#products section .product-detail a {
     font-size: 21px;
     color: white;
     text-decoration: none;
@@ -224,15 +307,30 @@ nav a {
 
 }
 
-#products section .product-detail a:hover {
+section#products section .product-detail a:hover {
     border: 2px solid brown;
     border-radius: 8px;
     background: white;
     color: brown;
 }
 
-#products section#fusuma {
+section#products section:nth-child(even) {
     flex-flow: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+    section#products section:nth-child(n) {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    section#products section .product-images, .product-detail {
+        flex: none;
+    }
+
+    section#products section .product-detail h2 {
+        font-size: 54px;
+    }
 }
 
 
