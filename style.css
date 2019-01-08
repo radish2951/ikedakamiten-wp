@@ -55,14 +55,14 @@ article .title, p.date {
 
 
 /* Header */
-#header {
+header#header {
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 100;
 }
 
-#header nav {
+header#header nav {
     height: 50px;
     display: flex;
     flex-shrink: 0;
@@ -71,12 +71,12 @@ article .title, p.date {
     background: rgba(0, 0, 0, 0.9);
 }
 
-#header nav ul {
+header#header nav ul {
     display: flex;
     justify-content: center;
 }
 
-#header nav ul li {
+header#header nav ul li {
     margin: 0 20px;
     font-size: 16px;
     font-weight: bold;
