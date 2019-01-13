@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main id="main">
+<main id="main-archive">
 <?php the_archive_title('<h1>', '</h1>'); ?>
 
 <?php

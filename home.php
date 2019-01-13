@@ -8,7 +8,7 @@
     </section>
 
     <section id="message">
-        <h2 class="section-title">秋田の心を、未来へ。</h2>
+        <h2>秋田の心を、未来へ。</h2>
         <p>秋田県秋田市に古くから伝わる伝統「秋田竿燈まつり」。私たちはその担い手として、提灯づくりを通じ、伝統を守り、受け継いでいます。</p>
         <p>襖紙・障子紙など各種表装材料も豊富に取り扱っております。伝統と現代の美が調和したインテリアを、お客様のニーズに合わせてご提案いたします。</p>
     </section>
@@ -48,7 +48,6 @@
     </section>
 
     <section id="news">
-        <h2 class="section-title">ニュース</h2>
 <?php
 if ( have_posts()) {
     while ( have_posts() ) {
@@ -56,7 +55,7 @@ if ( have_posts()) {
         if ( in_category( 'news' ) ) {
 ?>
 <article>
-<?php the_title('<h3 class="title"><a href="' . get_permalink() . '">', '</a></h3>'); ?>
+<?php the_title('<h2 class="title"><a href="' . get_permalink() . '">', '</a></h2>'); ?>
 <?php the_date('', '<p class="date"><time>', '</time></p>'); ?>
 <?php the_content(); ?>
 </article>
