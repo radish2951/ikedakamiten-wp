@@ -12,15 +12,16 @@ left: 0;
 </style>
 <main id="main-home">
     <section id="main-image">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Akita_Kanto_Festival_2015_at_night.JPG">
-        <img src="https://upload.wikimedia.org/wikipedia/ja/d/d5/Hiru_kanto_1.jpg">
-        <img src="https://keroblog.net/wp-content/uploads/2018/12/diag01-1.jpg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/01/CIMG1053.jpg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/01/IMGP1550.jpg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/01/CIMG2746.jpg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/01/CIMG2112.jpg">
         <div id="company-name">
             <h1>有限会社 池田紙店</h1>
             <p>Ikeda Kamiten Co.,Ltd.</p>
         </div>
     </section>
-<script src="<?php echo get_template_directory_uri() . '/js/script.js'?>"></script>
+<script src="<?php echo get_template_directory_uri() . '/js/script.js?v=' . rand(); ?>"></script>
 
     <section id="message">
         <h2>秋田の心を、未来へ。</h2>

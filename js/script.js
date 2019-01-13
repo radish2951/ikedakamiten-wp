@@ -1,7 +1,7 @@
 const backgroundImages = document.querySelectorAll('#main-image img');
 const n = backgroundImages.length;
-const visibleDuration = 1;
-const transitDuration = 0.4;
+const visibleDuration = 1.2;
+const transitDuration = 1;
 const unitDuration = visibleDuration + transitDuration;
 const totalDuration = unitDuration * n;
 const t = transitDuration / unitDuration;
