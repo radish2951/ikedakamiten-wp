@@ -335,25 +335,19 @@ section#news {
 
     article {
         margin: 24px auto;
-
-        p.date {
-        }
-
-
-        h2 {
-        }
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 768px) {
     section#news {
-        margin-top: 54px;
+        margin-top: 96px;
 
         article {
             width: $mobile-width-wide;
 
             h2 {
-                font-size: 21px;
+                font-size: 18px;
             }
         }
     }
@@ -407,28 +401,30 @@ footer#footer {
     }
 }
 
-main#main-singular, main#main-archive {
-    width: 100%;
-    max-width: $base-width-narrow;
-    margin: 150px auto;
 
-    article {
-        margin: 150px auto;
-
-        .date {
-            margin: 24px 0;
-            text-align: center;
-        }
-
-        p {
-            margin: 24px 0;
-            text-align: justify;
-            font-size: 18px;
-        }
-    }
-}
 
 main {
+    &#main-singular, &#main-archive {
+        width: 100%;
+        max-width: $base-width-narrow;
+        margin: 150px auto;
+
+        article {
+            margin: 150px auto;
+
+            .date {
+                margin: 24px 0;
+                text-align: center;
+            }
+
+            p {
+                margin: 24px 0;
+                text-align: justify;
+                font-size: 18px;
+            }
+        }
+    }
+
     &#main-singular {
         .title {
             font-size: 54px;
@@ -438,9 +434,40 @@ main {
     }
 
     &#main-archive {
+        h1 {
+            text-align: center;
+        }
+
         .title {
             font-size: 36px;
             text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        &#main-singular {
+            margin-top: 96px;
+            article {
+                width: $mobile-width-narrow;
+                margin: 96px auto;
+
+                .title {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        &#main-archive {
+            article {
+                width: $mobile-width-narrow;
+                margin: 96px auto;
+
+                .title {
+                    font-size: 24px;
+                }
+            }
         }
     }
 }
