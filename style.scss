@@ -309,7 +309,7 @@ section#products {
 
             h2 {
                 font-size: 32px;
-                margin: 12px 0;
+                margin: 24px 0;
                 text-align: center;
             }
 
@@ -319,7 +319,7 @@ section#products {
             }
 
             a {
-                margin-top: 36px;
+                margin-top: 24px;
             }
         }
     }
@@ -332,16 +332,15 @@ section#news {
     width: 100%;
     max-width: $base-width-wide;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
     article {
-        width: 45%;
+        margin: 24px auto;
+
+        p.date {
+        }
+
 
         h2 {
-            font-size: 28px;
-            margin-bottom: 6px;
         }
     }
 }
@@ -352,11 +351,9 @@ section#news {
 
         article {
             width: $mobile-width-wide;
-            margin: 24px auto;
 
             h2 {
                 font-size: 21px;
-                margin: 21px 0 8px 0;
             }
         }
     }
@@ -367,8 +364,8 @@ section#news {
 footer#footer {
     background: gray;
     color: white;
-    margin-top: 100px;
-    padding: 100px 0;
+    margin-top: 96px;
+    padding: 64px 0;
 
     #footer-company-information {
         width: 100%;
@@ -381,6 +378,11 @@ footer#footer {
             &.company-name {
                 font-size: 24px;
                 margin-bottom: 12px;
+            }
+
+            a {
+                color: white;
+                border: none;
             }
         }
     }

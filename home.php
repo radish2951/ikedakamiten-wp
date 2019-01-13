@@ -57,7 +57,7 @@ if ( have_posts()) {
 <article>
 <?php the_title('<h2 class="title"><a href="' . get_permalink() . '">', '</a></h2>'); ?>
 <?php the_date('', '<p class="date"><time>', '</time></p>'); ?>
-<?php the_content(); ?>
+<?php // the_content(); ?>
 </article>
 <?php
         }
