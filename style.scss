@@ -137,16 +137,13 @@ header#header {
 
 /* main-image */
 section#main-image {
-    overflow: hidden;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Akita_Kanto_Festival_2017.jpg/1920px-Akita_Kanto_Festival_2017.jpg);
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
     #company-name {
+        z-index: 1000;
         font-family: serif;
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
