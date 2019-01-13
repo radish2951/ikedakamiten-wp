@@ -5,144 +5,101 @@ Author: Daiki Ikeda
 Description: A theme for Ikedakamiten.
 Version: 1.0
 */
-
-
-
 /* Global Settings */
 body {
-    margin: 0;
-    font-family: "Times New Roman", "Sawarabi Mincho", "Yu Mincho", serif;
-}
+  margin: 0;
+  font-family: "Times New Roman", "Sawarabi Mincho", "Yu Mincho", serif; }
 
 a {
-    text-decoration: none;
-    color: black;
-    transition: color 200ms;
-}
-
-a:hover {
-    color: lightgray;
-}
+  text-decoration: none;
+  color: black;
+  transition: color 200ms; }
+  a:hover {
+    color: lightgray; }
 
 p, h1, h2, h3, h4, h5, h6, ul, li {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
 
 ul li {
-    list-style: none;
-}
+  list-style: none; }
 
 nav a {
-    color: white;
-}
+  color: white; }
 
 article .title, p.date {
-    margin: 20px 0;
-}
-
-
+  margin: 20px 0; }
 
 /* Header */
 header#header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 10000;
-}
-
-header#header nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10000; }
+  header#header nav {
     height: 50px;
-    background: rgba(0, 0, 0, 0.9);
-}
-
-header#header nav ul {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header#header nav ul li {
-    margin: 0 20px;
-    font-size: 16px;
-    font-weight: bold;
-}
+    background: rgba(0, 0, 0, 0.9); }
+    header#header nav ul {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header#header nav ul li {
+        margin: 0 20px;
+        font-size: 16px;
+        font-weight: bold; }
 
 @media screen and (max-width: 768px) {
-    header#header {
-        width: 72px;
-        height: 72px;
-        overflow: hidden;
-        right: 0;
-        transition: width 300ms, height 300ms;
-    }
-
+  header#header {
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    right: 0;
+    transition: width 300ms, height 300ms; }
     header#header::after {
-        content: "≡";
-        position: absolute;
-        top: -20px;
-        right: 10px;
-        font-size: 72px;
-        font-family: serif;
-        font-weight: lighter;
-    }
-
+      content: "≡";
+      position: absolute;
+      top: -20px;
+      right: 10px;
+      font-size: 72px;
+      font-family: serif;
+      font-weight: lighter; }
     header#header nav {
-        background: transparent;
-        transition: background 300ms, width 300ms, height 300ms;
-        right: 0;
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    header#header nav ul {
-        flex-flow: column;
-    }
-
-    header#header nav ul li {
-        width: 100%;
-        font-size: 21px;
-        font-weight: normal;
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    header#header nav ul a {
-        color: black;
-    }
-
+      background: transparent;
+      transition: background 300ms, width 300ms, height 300ms;
+      right: 0;
+      position: absolute;
+      width: 100vw;
+      height: 100vh; }
+      header#header nav ul {
+        flex-flow: column; }
+        header#header nav ul li {
+          width: 100%;
+          font-size: 21px;
+          font-weight: normal;
+          margin: 10px 0;
+          text-align: center; }
+          header#header nav ul li a {
+            color: black; }
     header#header.full {
-        width: 100%;
-        height: 100%;
-    }
-
-    header#header.full::after {
-        content: "×";
-    }
-
-    header#header.full nav {
-        background: rgba(255, 255, 255, 0.95);
-    }
-}
-
-
-
+      width: 100%;
+      height: 100%; }
+      header#header.full::after {
+        content: "×"; }
+      header#header.full nav {
+        background: rgba(255, 255, 255, 0.95); } }
 /* main-image */
 section#main-image {
-    overflow: hidden;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Akita_Kanto_Festival_2017.jpg/1920px-Akita_Kanto_Festival_2017.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-section#main-image #company-name {
+  overflow: hidden;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Akita_Kanto_Festival_2017.jpg/1920px-Akita_Kanto_Festival_2017.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  section#main-image #company-name {
     font-family: serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
@@ -154,222 +111,162 @@ section#main-image #company-name {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 80px 30px 80px;
-}
-
-section#main-image #company-name h1 {
-    font-size: 48px;
-    letter-spacing: 8px;
-    height: 100%;
-}
-
-section#main-image #company-name p {
-    font-size: 16px;
-    letter-spacing: 5px;
-    height: 100%;
-}
+    padding: 0 80px 30px 80px; }
+    section#main-image #company-name h1 {
+      font-size: 48px;
+      letter-spacing: 8px;
+      height: 100%; }
+    section#main-image #company-name p {
+      font-size: 16px;
+      letter-spacing: 5px;
+      height: 100%; }
 
 @media screen and (max-width: 768px) {
-    section#main-image #company-name {
-        width: 60%;
-        max-width: 500px;
-        height: 70%;
-        min-height: 400px;
-        padding: 0 20% 30px 20%;
-    }
-
+  section#main-image #company-name {
+    width: 60%;
+    max-width: 500px;
+    height: 70%;
+    min-height: 400px;
+    padding: 0 20% 30px 20%; }
     section#main-image #company-name h1 {
-        font-size: 36px;
-        letter-spacing: 4px;
-    }
-
+      font-size: 36px;
+      letter-spacing: 4px; }
     section#main-image #company-name p {
-        font-size: 14px;
-        letter-spacing: 2px;
-    }
-}
-
-
-
+      font-size: 14px;
+      letter-spacing: 2px; } }
 /* Message */
 section#message {
-    margin: 150px 0;
-}
-
-section#message h2 {
+  margin: 150px 0; }
+  section#message h2 {
     font-size: 90px;
     margin-bottom: 70px;
-    text-align: center;
-}
-
-section#message p {
+    text-align: center; }
+  section#message p {
     width: 500px;
     max-width: 98%;
     margin: 30px auto;
     font-size: 18px;
     text-align: justify;
-    line-height: 44px;
-}
+    line-height: 44px; }
 
 @media screen and (max-width: 768px) {
-    section#message {
-        margin-top: 30px;
-    }
-
+  section#message {
+    margin-top: 30px; }
     section#message h2 {
-        text-align: justify;
-        word-wrap: break-word;
-        font-size: 48px;
-        margin: 150px auto 70px auto;
-        max-width: 80%;
-    }
-
+      text-align: justify;
+      word-wrap: break-word;
+      font-size: 48px;
+      margin: 150px auto 70px auto;
+      max-width: 80%; }
     section#message p {
-        max-width: 80%;
-    }
-}
-
-
-
+      max-width: 80%; } }
 /* Products */
-section#products {
-}
-
 section#products section {
-    display: flex;
-    width: 900px;
-    max-width: 100%;
-    margin: 160px auto;
-}
-
-section#products section .product-images {
+  display: flex;
+  width: 900px;
+  max-width: 100%;
+  margin: 160px auto; }
+  section#products section .product-images {
     width: 100%;
-    flex: 2;
-}
-
-section#products section .product-images img {
+    flex: 2; }
+    section#products section .product-images img {
+      width: 100%; }
+  section#products section .product-detail {
     width: 100%;
-}
-
-section#products section .product-detail {
-    width: 100%;
-    flex: 3;
-}
-
-section#products section .product-detail h2 {
-    font-size: 60px;
-}
-
-section#products section .product-detail a {
-    font-size: 21px;
-    color: white;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: color 200ms, border-radius 200ms, background 200ms;
-
-    background: brown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto 0 auto;
-    width: 180px;
-    height: 54px;
-}
-
-section#products section .product-detail a:hover {
-    border: 2px solid brown;
-    border-radius: 8px;
-    background: white;
-    color: brown;
-}
-
-section#products section:nth-child(even) {
-    flex-flow: row-reverse;
-}
+    flex: 3; }
+    section#products section .product-detail h2 {
+      font-size: 60px; }
+    section#products section .product-detail a {
+      font-size: 21px;
+      color: white;
+      text-decoration: none;
+      box-sizing: border-box;
+      transition: color 200ms, border-radius 200ms, background 200ms;
+      background: brown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px auto 0 auto;
+      width: 180px;
+      height: 54px; }
+      section#products section .product-detail a:hover {
+        border: 2px solid brown;
+        border-radius: 8px;
+        background: white;
+        color: brown; }
+  section#products section:nth-child(even) {
+    flex-flow: row-reverse; }
 
 @media screen and (max-width: 768px) {
-    section#products section:nth-child(n) {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-
-    section#products section .product-images, .product-detail {
-        flex: none;
-    }
-
-    section#products section .product-detail h2 {
-        font-size: 54px;
-    }
-}
-
-
-
+  section#products section:nth-child(n) {
+    flex-flow: row wrap;
+    justify-content: center; }
+  section#products section .product-images, section#products section .product-detail {
+    flex: none; }
+    section#products section .product-images h2, section#products section .product-detail h2 {
+      font-size: 54px; } }
 /* News */
-#news {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#news h2 {
+section#news {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  section#news h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
-    font-size: 50px;
-}
-
-#news article {
-    width: 45%;
-}
-
-#news article h3 {
-    font-size: 28px;
-    margin-bottom: 6px;
-}
-
-
+    font-size: 50px; }
+  section#news article {
+    width: 45%; }
+    section#news article h3 {
+      font-size: 28px;
+      margin-bottom: 6px; }
 
 /* Footer */
-#footer {
-    background: gray;
-    color: white;
-    padding: 50px 16vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 100px;
-}
-
-#footer nav {
-    font-size: 16px;
-}
-
-#footer #footer-company-information h1 {
+footer#footer {
+  background: gray;
+  color: white;
+  padding: 50px 16vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 100px; }
+  footer#footer nav {
+    font-size: 16px; }
+  footer#footer #footer-company-imformation h1 {
     font-size: 24px;
-    margin-bottom: 12px;
-}
-#footer #footer-company-information p {
-    font-size: 16px;
-}
-
-
+    margin-bottom: 12px; }
+  footer#footer #footer-company-imformation p {
+    font-size: 16px; }
 
 main#main {
-    width: 100%;
-    max-width: 700px;
-    margin: 150px auto;
-}
+  width: 100%;
+  max-width: 700px;
+  margin: 150px auto; }
 
 main#main article {
-    margin: 120px auto;
-}
+  margin: 120px auto; }
 
-main#main article .title {
-    font-size: 42px;
-}
+main#main article h1.title {
+  font-size: 54px;
+  text-align: left;
+  margin-bottom: 54px; }
 
+main#main article h2.title {
+  font-size: 36px;
+  text-align: center; }
 
+main#main article .date {
+  text-align: center; }
 
+main#main article .title a {
+  border-bottom: 2px solid; }
+
+main#main article p {
+  margin: 24px 0;
+  text-align: justify;
+  font-size: 18px; }
+
+/*# sourceMappingURL=style.css.map */
