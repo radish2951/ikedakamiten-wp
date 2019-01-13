@@ -1,11 +1,26 @@
 <?php get_header(); ?>
+<style>
+#main-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+</style>
 <main id="main-home">
     <section id="main-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Akita_Kanto_Festival_2015_at_night.JPG">
+        <img src="https://upload.wikimedia.org/wikipedia/ja/d/d5/Hiru_kanto_1.jpg">
+        <img src="https://keroblog.net/wp-content/uploads/2018/12/diag01-1.jpg">
         <div id="company-name">
             <h1>有限会社 池田紙店</h1>
             <p>Ikeda Kamiten Co.,Ltd.</p>
         </div>
     </section>
+<script src="<?php echo get_template_directory_uri() . '/js/script.js'?>"></script>
 
     <section id="message">
         <h2>秋田の心を、未来へ。</h2>
