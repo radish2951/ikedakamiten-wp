@@ -141,21 +141,30 @@ section#main-image {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: black;
+
+    img {
+        opacity: 0.5;
+    }
 
     #company-name {
         z-index: 1000;
-        font-family: serif;
+        //font-family: serif;
         color: white;
-        background-color: rgba(0, 0, 0, 0.7);
-        width: 300px;
-        height: 80%;
-        writing-mode: vertical-rl;
-        text-align: right;
+        //background-color: rgba(0, 0, 0, 0.7);
+        // background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+        //width: 300px;
+        //height: 80%;
+        //writing-mode: vertical-rl;
+        //text-align: right;
         box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 0 80px 30px 80px;
+        //display: flex;
+        //flex-wrap: wrap;
+        //align-items: center;
+        //padding: 0 80px 30px 80px;
+        padding: 36px;
+        width: 1200px;
+        max-width: 100%;
 
         h1 {
             font-size: 48px;

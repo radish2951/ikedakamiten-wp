@@ -24,7 +24,7 @@ left: 0;
 <script src="<?php echo get_template_directory_uri() . '/js/script.js?v=' . rand(); ?>"></script>
 
     <section id="message">
-        <h2>秋田の心を、未来へ。</h2>
+        <h2 class="lift">秋田の心を、未来へ。</h2>
         <p>秋田県秋田市に古くから伝わる伝統「秋田竿燈まつり」。私たちはその担い手として、提灯づくりを通じ、伝統を守り、受け継いでいます。</p>
         <p>襖紙・障子紙など各種表装材料も豊富に取り扱っております。伝統と現代の美が調和したインテリアを、お客様のニーズに合わせてご提案いたします。</p>
     </section>

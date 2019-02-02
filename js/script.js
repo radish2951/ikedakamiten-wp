@@ -44,3 +44,4 @@ for (i = n - 1; i > 0; i--) {
     }
     backgroundImages[i].style.animation = `${totalDuration}s ${(n-1-i) * unitDuration}s infinite slideshow-${position}`;
 }
+
