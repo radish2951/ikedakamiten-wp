@@ -1,0 +1,10 @@
+.float {
+    opacity: 0;
+    margin-top: 3000px;
+    transition: opacity 4s, margin-top 4s;
+}
+
+.float.appeared {
+    opacity: 1;
+    margin-top: 0;
+}

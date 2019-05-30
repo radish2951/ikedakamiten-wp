@@ -95,8 +95,6 @@ section#main-image {
   align-items: center;
   height: 100vh;
   background: black; }
-  section#main-image img {
-    opacity: 0.5; }
   section#main-image #company-name {
     z-index: 1000;
     color: white;

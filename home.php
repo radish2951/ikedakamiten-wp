@@ -12,21 +12,21 @@ left: 0;
 </style>
 <main id="main-home">
     <section id="main-image">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/01/CIMG1053.jpg">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/01/IMGP1550.jpg">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/01/CIMG2746.jpg">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/01/CIMG2112.jpg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_105128492062987_20190510_155703855.jpeg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_105162266385201_20190510_155737630.jpeg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_6707611077322_20190530_145225260.jpeg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_6913715378181_20190530_145551364.jpeg">
         <div id="company-name">
-            <h1>有限会社 池田紙店</h1>
+            <h1><?php echo get_option( 'blogname' ); ?></h1>
             <p>Ikeda Kamiten Co.,Ltd.</p>
         </div>
     </section>
 <script src="<?php echo get_template_directory_uri() . '/js/script.js?v=' . rand(); ?>"></script>
 
     <section id="message">
-        <h2 class="lift">秋田の心を、未来へ。</h2>
-        <p>秋田県秋田市に古くから伝わる伝統「秋田竿燈まつり」。私たちはその担い手として、提灯づくりを通じ、伝統を守り、受け継いでいます。</p>
-        <p>襖紙・障子紙など各種表装材料も豊富に取り扱っております。伝統と現代の美が調和したインテリアを、お客様のニーズに合わせてご提案いたします。</p>
+        <h2 class="float">和の安らぎを、秋田から。</h2>
+        <p class="float">秋田県秋田市に古くから伝わる伝統「秋田竿燈まつり」。私たちはその担い手として、提灯づくりを通じ、伝統を守り、受け継いでいます。</p>
+        <p class="float">襖紙・障子紙など各種表装材料も豊富に取り扱っております。伝統と現代の美が調和したインテリアを、お客様のニーズに合わせてご提案いたします。</p>
     </section>
 
     <section id="products">
@@ -65,21 +65,30 @@ left: 0;
 
     <section id="news">
 <?php
+query_posts( 'cat=3' );
 if ( have_posts()) {
     while ( have_posts() ) {
         the_post();
-        if ( in_category( 'news' ) ) {
 ?>
 <article>
 <?php the_title('<h2 class="title"><a href="' . get_permalink() . '">', '</a></h2>'); ?>
 <?php the_date('', '<p class="date"><time>', '</time></p>'); ?>
-<?php // the_content(); ?>
 </article>
 <?php
-        }
     }
 }
 ?>
     </section>
 </main>
+
+<script>
+window.addEventListener('load', e => {
+    document.addEventListener('scroll', e => {
+        console.log(document.getElementById('message').scrollTop);
+});
+});
+</script>
+    <script src="<?php echo get_template_directory_uri(); ?>/float.js"></script>
+
+
 <?php get_footer(); ?>

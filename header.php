@@ -7,6 +7,7 @@
     <title><?php wp_title(); ?></title>
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri() . "?v=" . rand(); ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/float.css?v=' . rand(); ?>">
 	<?php wp_head(); ?>
 </head>
 <body>
