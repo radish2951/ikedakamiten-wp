@@ -9,7 +9,7 @@ function callback(entries, observer) {
 };
 
 
-let observer = new IntersectionObserver(callback, {threshold: [0.4, 0.5, 0.6]});
+let observer = new IntersectionObserver(callback, {threshold: 0.1});
 
 let floatElements = document.getElementsByClassName('float');
 
