@@ -1,15 +1,4 @@
 <?php get_header(); ?>
-<style>
-#main-image img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-position: absolute;
-top: 0;
-left: 0;
-}
-
-</style>
 <main id="main-home">
     <section id="main-image">
         <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_105128492062987_20190510_155703855.jpeg">
@@ -27,6 +16,20 @@ left: 0;
         <h2 class="float">和の安らぎを、秋田から。</h2>
         <p class="float">秋田県秋田市に古くから伝わる伝統「秋田竿燈まつり」。私たちはその担い手として、提灯づくりを通じ、伝統を守り、受け継いでいます。</p>
         <p class="float">襖紙・障子紙など各種表装材料も豊富に取り扱っております。伝統と現代の美が調和したインテリアを、お客様のニーズに合わせてご提案いたします。</p>
+    </section>
+
+    <section id="chochin">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
     </section>
 
     <section id="products">
