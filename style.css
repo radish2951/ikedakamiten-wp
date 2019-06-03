@@ -265,18 +265,31 @@ section#chochin {
 }
 
 section#chochin img {
-  --chochin-columns: 5;
   object-fit: contain;
-  width: calc(100%/6 + 1%);
+  width: calc(100%/8 + 1%);
   height: 33vh;
 }
 
-section#chochin p {
+section#chochin h2 {
   font-size: 70px;
-  width: calc(4*100%/7);
+  width: calc(5*100%/7);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  section#chochin img {
+    width: calc(100%/5 + 1%);
+    height: auto;
+  }
+  section#chochin h2 {
+    width: 100%;
+    text-align: justify;
+    word-wrap: break-word;
+    font-size: 48px;
+    margin: 20px 0;
+  }
 }
 
 /*

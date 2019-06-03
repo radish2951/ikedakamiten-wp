@@ -25,7 +25,11 @@
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <p>世界に一つだけの提灯。</p>
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <h2>世界に一つだけの提灯。</h2>
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
