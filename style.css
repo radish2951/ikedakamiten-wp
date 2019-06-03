@@ -258,13 +258,25 @@ section#message p {
  * Chochin
  */
 section#chochin {
-  display: grid;
-  grid-template-rows: 100px 500px;
-  grid-template-columns: 600px 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 section#chochin img {
-  object-fit: cover;
+  --chochin-columns: 5;
+  object-fit: contain;
+  width: calc(100%/6 + 1%);
+  height: 33vh;
+}
+
+section#chochin p {
+  font-size: 70px;
+  width: calc(4*100%/7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*

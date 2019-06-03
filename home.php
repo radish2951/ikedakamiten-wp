@@ -25,6 +25,8 @@
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <p>世界に一つだけの提灯。</p>
+        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
@@ -32,6 +34,7 @@
         <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
     </section>
 
+<!--
     <section id="products">
         <section id="chochin">
             <div class="product-images">
@@ -65,6 +68,7 @@
         </section>
 
     </section>
+-->
 
     <section id="news">
 <?php
