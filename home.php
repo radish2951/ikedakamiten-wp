@@ -92,14 +92,7 @@ if ( have_posts()) {
     </section>
 </main>
 
-<script>
-window.addEventListener('load', e => {
-    document.addEventListener('scroll', e => {
-        console.log(document.getElementById('message').scrollTop);
-});
-});
-</script>
-    <script src="<?php echo get_template_directory_uri(); ?>/float.js"></script>
-
+<script src="<?php echo get_template_directory_uri(); ?>/float.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/chochin.js"></script>
 
 <?php get_footer(); ?>
