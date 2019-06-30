@@ -10,8 +10,8 @@ const style = document.createElement('style');
 style.innerText = `
     @keyframes slideshow {
         0% { opacity: 0; }
-        ${100 * transitDuration / totalDuration}% { opacity: 1; }
-        ${100 * unitDuration / totalDuration}% { opacity: 1; }
+        ${100 * transitDuration / totalDuration}%                  { opacity: 1; }
+        ${100 * unitDuration / totalDuration}%                     { opacity: 1; }
         ${100 * (unitDuration + transitDuration) / totalDuration}% { opacity: 0; }
         100% { opacity: 0; }
     }

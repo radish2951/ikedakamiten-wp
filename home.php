@@ -19,23 +19,23 @@
     </section>
 
     <section id="chochin">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <h2>世界に一つだけの提灯。</h2>
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
-        <img src="http://www.ton-hi.com/swfu/d/auto_gfynmc.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <h2 class="float">世界に一つだけの提灯。</h2>
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
     </section>
 
 <!--
@@ -81,7 +81,7 @@ if ( have_posts()) {
     while ( have_posts() ) {
         the_post();
 ?>
-<article>
+<article class="float">
 <?php the_title('<h2 class="title"><a href="' . get_permalink() . '">', '</a></h2>'); ?>
 <?php the_date('', '<p class="date"><time>', '</time></p>'); ?>
 </article>
