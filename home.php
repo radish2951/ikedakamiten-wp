@@ -19,23 +19,23 @@
     </section>
 
     <section id="chochin">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin01.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin02.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin03.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin01.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin02.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin03.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin01.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin02.png">
         <h2 class="float">世界に一つだけの提灯。</h2>
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
-        <img src="https://pbs.twimg.com/profile_images/872317286115356672/wYXC2VYl_400x400.jpg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin03.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin01.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin02.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin03.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin01.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin02.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin03.png">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin01.png">
     </section>
 
 <!--

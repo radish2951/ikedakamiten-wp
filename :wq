@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 for (let i = 0; i < chochins.length; i++) {
                     window.setTimeout(() => {
                         chochins[i].classList.add('appeared');
-                    }, i * 200);
+                    }, i * 100);
                 }
             }
         });
-    }, {threshold: 0.4});
+    }, {threshold: 0.7});
 
     observer.observe(chochinContainer);
 
