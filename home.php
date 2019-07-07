@@ -13,7 +13,7 @@
 <script src="<?php echo get_template_directory_uri() . '/js/script.js?v=' . rand(); ?>"></script>
 
     <section id="message">
-        <h2 class="float">和の安らぎを、秋田から。</h2>
+        <h2 class="float">和の<span>安らぎ</span>を、秋田から。</h2>
         <p class="float">秋田県秋田市に古くから伝わる伝統「秋田竿燈まつり」。私たちはその担い手として、提灯づくりを通じ、伝統を守り、受け継いでいます。</p>
         <p class="float">襖紙・障子紙など各種表装材料も豊富に取り扱っております。伝統と現代の美が調和したインテリアを、お客様のニーズに合わせてご提案いたします。</p>
     </section>
@@ -94,5 +94,6 @@ if ( have_posts()) {
 
 <script src="<?php echo get_template_directory_uri(); ?>/float.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/chochin.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/blur.js"></script>
 
 <?php get_footer(); ?>

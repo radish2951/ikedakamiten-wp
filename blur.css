@@ -1,0 +1,12 @@
+section#message h2 span.blur {
+  animation: 0.8s 1 blur;
+}
+
+@keyframes blur {
+  from {
+    filter: blur(6px);
+    color: gray;
+  }
+  to   {}
+}
+
