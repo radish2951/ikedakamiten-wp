@@ -2,8 +2,7 @@
 <main id="main-home">
     <section id="main-image">
         <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_105128492062987_20190510_155703855.jpeg">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_105162266385201_20190510_155737630.jpeg">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_6707611077322_20190530_145225260.jpeg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/IMG_1962-Edit.jpg">
         <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_6913715378181_20190530_145551364.jpeg">
         <div id="company-name">
             <h1><?php echo get_option( 'blogname' ); ?></h1>
