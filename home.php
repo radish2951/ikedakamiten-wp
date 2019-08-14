@@ -4,6 +4,8 @@
         <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_105128492062987_20190510_155703855.jpeg">
         <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/IMG_1962-Edit.jpg">
         <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_6913715378181_20190530_145551364.jpeg">
+        <img src="http://sakura-taisen.com/game/shin-sakura/assets/images/toppage/obj_sakura.png">
+        <div class="overlay"></div>
         <div id="company-name">
             <h1><?php echo get_option( 'blogname' ); ?></h1>
             <p>Ikeda Kamiten Co.,Ltd.</p>
@@ -93,6 +95,6 @@ if ( have_posts()) {
 
 <script src="<?php echo get_template_directory_uri(); ?>/float.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/chochin.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/blur.js"></script>
+<!--script src="<?php echo get_template_directory_uri(); ?>/blur.js"></script-->
 
 <?php get_footer(); ?>
