@@ -16,6 +16,11 @@ Version: 1.0
 body {
   margin: 0;
   font-family: "Times New Roman", "Noto Serif JP", "Yu Mincho", serif;
+  transition: background 2s;
+}
+
+body.dark {
+  background: black;
 }
 
 a {
