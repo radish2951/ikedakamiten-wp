@@ -1,7 +1,7 @@
 const images = document.querySelectorAll('#main-image img');
 const n = images.length;
-const visibleDuration = 0.5;
-const transitDuration = 2;
+const visibleDuration = 0.7;
+const transitDuration = 1.2;
 const unitDuration = visibleDuration + transitDuration;
 const totalDuration = unitDuration * n;
 const mainImage = document.getElementById('main-image');
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', e => {
     }
 });
 
-window.addEventListener('load', e => {
+document.addEventListener('DOMContentLoaded', e => {
     for (i = 0; i < n; i++) {
         images[i].style.animation = `${totalDuration}s ${i * unitDuration}s infinite slideshow`;
     }

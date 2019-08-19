@@ -16,11 +16,7 @@ Version: 1.0
 body {
   margin: 0;
   font-family: "Times New Roman", "Noto Serif JP", "Yu Mincho", serif;
-  transition: background 2s;
-}
-
-body.dark {
-  background: black;
+  overflow-x: hidden;
 }
 
 a {
@@ -34,14 +30,40 @@ a:hover {
     color: lightgray;
 }
 
+p.button {
+  text-align: center;
+}
+
+p.button a {
+  color: gray;
+  background: white;
+  border: 2px solid gray;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 0 auto;
+}
+
 p, h1, h2, h3, h4, h5, h6, ul, li {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
+p {
+  font-size: 18px;
+  line-height: 44px;
+  margin: 30px auto;
+  width: 500px;
+  max-width: 80%;
+  text-align: justify;
+}
+
 ul li {
   list-style: none;
+}
+
+section {
+  position: relative;
 }
 
 
@@ -65,7 +87,7 @@ header#header {
 
 header#header nav {
   height: 50px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 header#header nav a {
@@ -83,9 +105,6 @@ header#header nav ul {
 header#header nav ul li {
   margin: 0 20px;
   font-size: 16px;
-  /*
-  font-weight: bold;
-  */
 }
 
 @media screen and (max-width: 768px) {
@@ -109,11 +128,11 @@ header#header nav ul li {
 
   header#header nav {
     background: transparent;
-    transition: background 300ms, width 300ms, height 300ms;
     right: 0;
     position: absolute;
     width: 100vw;
     height: 100vh;
+    transition: background 300ms;
   }
 
   header#header nav ul {
@@ -121,11 +140,8 @@ header#header nav ul li {
   }
 
   header#header nav ul li {
-    width: 100%;
     font-size: 21px;
-    font-weight: normal;
     margin: 10px 0;
-    text-align: center;
   }
 
   header#header nav ul li a {
@@ -133,8 +149,8 @@ header#header nav ul li {
   }
 
   header#header.full {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
 
   header#header.full::after {
@@ -143,7 +159,7 @@ header#header nav ul li {
 
   header#header.full nav {
     background: rgba(255, 255, 255, 0.95);
-    }
+  }
 }
 
 
@@ -157,13 +173,14 @@ section#main-image {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
   background: black;
 }
 
 section#main-image img {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -171,41 +188,39 @@ section#main-image img {
 }
 
 section#main-image .overlay {
-  width: 100%;
-  height: 100%;
+  display: none;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  background-size: 3px 3px;
-  background-image: radial-gradient(rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 70%);
+  background-size: 6px 6px;
+  background-image: radial-gradient(rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.2) 70%);
 }
 
 section#main-image #company-name {
   z-index: 1000;
   color: white;
-  box-sizing: border-box;
-  padding: 36px;
-  width: 1200px;
+  width: 1300px;
   max-width: 100%;
 }
 
 section#main-image #company-name h1 {
   font-size: 48px;
   letter-spacing: 8px;
-  height: 100%;
   border-bottom: 1px solid white;
 }
 
 section#main-image #company-name p {
+  width: 100%;
+  margin: 0;
   font-size: 16px;
   letter-spacing: 5px;
-  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
   section#main-image #company-name {
     writing-mode: vertical-lr;
-    font-family: "Noto Serif JP", "游明朝", "Yu Mincho", serif;
     width: auto;
     margin-left: -42px;
   }
@@ -230,34 +245,24 @@ section#main-image #company-name p {
  * Messages
  */
 section#message {
-  margin: 150px 0;
+  margin: 10px;
+  padding: 120px 0;
+  background: #faf5f3;
+  color: #4f0103;
 }
 
 section#message h2 {
   font-size: 90px;
-  margin-bottom: 70px;
+  margin: 30px auto 120px auto;
   text-align: center;
 }
 
-section#message p {
-  width: 500px;
-  max-width: 96%;
-  margin: 30px auto;
-  font-size: 18px;
-  text-align: justify;
-  line-height: 44px;
-}
-
 @media screen and (max-width: 768px) {
-  section#message {
-    margin-top: 30px;
-  }
 
   section#message h2 {
     text-align: justify;
     word-wrap: break-word;
-    font-size: 44px;
-    margin: 150px auto 70px auto;
+    font-size: 40px;
     max-width: 80%;
   }
 
@@ -289,9 +294,17 @@ section#chochin img {
 section#chochin h2 {
   font-size: 70px;
   width: calc(5*100%/7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+}
+
+section#try-chochin {
+  margin: 10px;
+  padding-top: 50px;
+}
+
+section#try-chochin img {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -307,65 +320,17 @@ section#chochin h2 {
     margin: 20px 0;
   }
 }
+section#fusuma {
+  background: orange;
+  height: 3000px;
+}
+section#fusuma h2 {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
 
-/*
- * Products
- */
-section#products section {
-  display: flex;
-  width: 900px;
-  max-width: 100%;
-  margin: 160px auto; }
-  section#products section .product-images {
-    width: 100%;
-    flex: 2; }
-    section#products section .product-images img {
-      width: 100%; }
-  section#products section .product-detail {
-    width: 100%;
-    flex: 3; }
-    section#products section .product-detail h2 {
-      font-size: 60px; }
-    section#products section .product-detail a {
-      font-size: 21px;
-      color: white;
-      text-decoration: none;
-      box-sizing: border-box;
-      transition: color 200ms, border-radius 200ms, background 200ms;
-      background: brown;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 50px auto 0 auto;
-      width: 180px;
-      height: 54px; }
-      section#products section .product-detail a:hover {
-        border: 2px solid brown;
-        border-radius: 8px;
-        background: white;
-        color: brown; }
-  section#products section:nth-child(even) {
-    flex-flow: row-reverse; }
-
-@media screen and (max-width: 768px) {
-  section#products section {
-    margin: 42px 0; }
-    section#products section:nth-child(n) {
-      flex-flow: row wrap;
-      justify-content: center; }
-    section#products section .product-images {
-      flex: none; }
-    section#products section .product-detail {
-      flex: none; }
-      section#products section .product-detail h2 {
-        font-size: 32px;
-        margin: 24px 0;
-        text-align: center; }
-      section#products section .product-detail p {
-        width: 80%;
-        margin: 12px auto; }
-      section#products section .product-detail a {
-        margin-top: 24px; } }
 /* News */
 section#news {
   width: 100%;

@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 <main id="main-home">
     <section id="main-image">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_105128492062987_20190510_155703855.jpeg">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/IMG_1962-Edit.jpg">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/05/LRM_EXPORT_6913715378181_20190530_145551364.jpeg">
-        <img src="http://sakura-taisen.com/game/shin-sakura/assets/images/toppage/obj_sakura.png">
-        <div class="overlay"></div>
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/08/IMGP1548__.jpg">
+        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/08/IMG_1958_.jpg">
+        <img src="/wp-content/uploads/2019/08/CIMG2746_small.jpg">
+        <img src="/wp-content/uploads/2019/08/IMG_20181207_103641-2-2.jpg" style="object-position:right">
         <div id="company-name">
             <h1><?php echo get_option( 'blogname' ); ?></h1>
             <p>Ikeda Kamiten Co.,Ltd.</p>
@@ -15,8 +14,9 @@
 
     <section id="message">
         <h2 class="float">和の<span>安らぎ</span>を、秋田から。</h2>
-        <p class="float">秋田県秋田市に古くから伝わる伝統「秋田竿燈まつり」。私たちはその担い手として、提灯づくりを通じ、伝統を守り、受け継いでいます。</p>
-        <!-- p class="float">襖紙・障子紙など各種表装材料も豊富に取り扱っております。伝統と現代の美が調和したインテリアを、お客様のニーズに合わせてご提案いたします。</p -->
+        <p class="float">和の風景。</p>
+        <p>秋田県秋田市に古くから伝わる伝統<br>「秋田竿燈まつり」。</p>
+        <p>私たちは提灯づくりを通じてその伝統を守り、受け継いでいます。</p>
     </section>
 
     <section id="chochin">
@@ -37,46 +37,20 @@
         <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin02-1.png">
         <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin03-1.png">
         <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/07/chochin04.png">
-        <p class="float">いろんな提灯を作っています！あなたも記念におひとつどうですか？</p>
+    </section>
+    <section id="try-chochin">
+        <p>日常を、灯そう。</p>
+        <p class="button"><a href="">詳細</a></p>
+        <img class="half" src="https://scontent-nrt1-1.cdninstagram.com/vp/a6e9d28104ab75c1ece1bdd7e0928aaf/5DD5FC59/t51.2885-15/e35/12519444_849342471854980_750284188_n.jpg?_nc_ht=scontent-nrt1-1.cdninstagram.com">
     </section>
 
-<!--
-    <section id="products">
-        <section id="chochin">
-            <div class="product-images">
-                <img src="http://blog-imgs-70.fc2.com/k/f/1/kf1955story/2005_ph21.jpg">
-            </div>
-            <div class="product-detail">
-                <h2>世界に一つの提灯。</h2>
-                <p>秋田竿燈まつりで使用される提灯です。オーダーメイドにも対応いたします。世界に1つしかない提灯を作ってみませんか？</p>
-                <a href="">もっと詳しく</a>
-            </div>
-        </section>
-        <section id="fusuma">
-            <div class="product-images">
-                <img src="https://ssl.runon.co.jp/disney/fusumakami/images/ph752l.jpg">
-            </div>
-            <div class="product-detail">
-                <h2>いつも隣に襖を。</h2>
-                <p>和室の内装には欠かせない襖。約700種類の襖の中からお気に入りのデザインを見つけてみてください。</p>
-                <a href="">もっと詳しく</a>
-            </div>
-        </section>
-        <section id="shoji">
-            <div class="product-images">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/71WIjiuBxaL._SL1500_.jpg">
-            </div>
-            <div class="product-detail">
-                <h2>障子はもう破れません。</h2>
-                <p>破れにくい障子紙など機能性に優れたもののほか、各種表装材料も取り扱っております。</p>
-                <a href="">もっと詳しく</a>
-            </div>
-        </section>
-
+    <section id="fusuma">
+        <h2>Look at Me!!!</h2>
+        <div></div>
     </section>
--->
 
     <section id="news">
+<h2>ニュース</h2>
 <?php
 query_posts( 'cat=3' );
 if ( have_posts()) {
@@ -86,6 +60,7 @@ if ( have_posts()) {
 <article class="float">
 <?php the_title('<h2 class="title"><a href="' . get_permalink() . '">', '</a></h2>'); ?>
 <?php the_date('', '<p class="date"><time>', '</time></p>'); ?>
+<?php the_content(); ?>
 </article>
 <?php
     }
@@ -94,8 +69,8 @@ if ( have_posts()) {
     </section>
 </main>
 
-<script src="<?php echo get_template_directory_uri(); ?>/float.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/chochin.js"></script>
+<!--script src="<?php echo get_template_directory_uri(); ?>/float.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/chochin.js"></script-->
 <!--script src="<?php echo get_template_directory_uri(); ?>/blur.js"></script-->
-
+<script src="<?php echo get_template_directory_uri(); ?>/test.js<?php echo '?v=' . rand(); ?>"></script>
 <?php get_footer(); ?>
