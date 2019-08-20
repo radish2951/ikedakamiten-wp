@@ -45,7 +45,10 @@
     </section>
 
     <section id="fusuma">
-        <h2>Look at Me!!!</h2>
+        <div id="fusuma-animation">
+            <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/08/fusuma_l.jpg">
+            <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/08/fusuma_r.jpg">
+        </div>
         <div></div>
     </section>
 
@@ -69,8 +72,8 @@ if ( have_posts()) {
     </section>
 </main>
 
-<!--script src="<?php echo get_template_directory_uri(); ?>/float.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/chochin.js"></script-->
+<!--script src="<?php echo get_template_directory_uri(); ?>/float.js"></script-->
+<script src="<?php echo get_template_directory_uri(); ?>/chochin.js"></script>
 <!--script src="<?php echo get_template_directory_uri(); ?>/blur.js"></script-->
 <script src="<?php echo get_template_directory_uri(); ?>/test.js<?php echo '?v=' . rand(); ?>"></script>
 <?php get_footer(); ?>

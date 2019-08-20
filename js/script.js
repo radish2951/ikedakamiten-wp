@@ -9,11 +9,19 @@ const style = document.createElement('style');
 
 style.innerText = `
     @keyframes slideshow {
-        0% { opacity: 0; }
-        ${100 * transitDuration / totalDuration}%                  { opacity: 1; }
-        ${100 * unitDuration / totalDuration}%                     { opacity: 1; }
-        ${100 * (unitDuration + transitDuration) / totalDuration}% { opacity: 0; }
-        100% { opacity: 0; }
+        0% {
+            opacity: 0;
+            transform: scale(1.1);
+        } ${100 * transitDuration / totalDuration}% {
+            opacity: 1;
+        } ${100 * unitDuration / totalDuration}% {
+            opacity: 1;
+        } ${100 * (unitDuration + transitDuration) / totalDuration}% {
+            opacity: 0;
+        } 100% {
+            opacity: 0;
+            transform: scale(1);
+        }
     }
 `;
 
@@ -22,11 +30,6 @@ mainImage.appendChild(style);
 document.addEventListener('DOMContentLoaded', e => {
     for (let i = 0; i < n; i++) {
         images[i].style.opacity = 0;
-    }
-});
-
-document.addEventListener('DOMContentLoaded', e => {
-    for (i = 0; i < n; i++) {
-        images[i].style.animation = `${totalDuration}s ${i * unitDuration}s infinite slideshow`;
+        images[i].style.animation = `${totalDuration}s ${i * unitDuration}s linear infinite slideshow`;
     }
 });

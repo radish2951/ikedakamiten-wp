@@ -62,16 +62,13 @@ ul li {
   list-style: none;
 }
 
-section {
-  position: relative;
-}
 
 
 /*
  * Variables
  */
-body {
-  --breakwidth: 768px;
+:root {
+  --break: 768px;
 }
 
 
@@ -164,8 +161,6 @@ header#header nav ul li {
 
 
 
-
-
 /*
  * main-image
  */
@@ -176,6 +171,8 @@ section#main-image {
   width: 100vw;
   height: 100vh;
   background: black;
+  overflow: hidden;
+  position: relative;
 }
 
 section#main-image img {
@@ -185,17 +182,6 @@ section#main-image img {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-section#main-image .overlay {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: 6px 6px;
-  background-image: radial-gradient(rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.2) 70%);
 }
 
 section#main-image #company-name {
@@ -304,6 +290,7 @@ section#try-chochin {
 
 section#try-chochin img {
   width: 100%;
+  max-width: 500px;
   height: auto;
 }
 
@@ -321,16 +308,31 @@ section#try-chochin img {
   }
 }
 section#fusuma {
-  background: orange;
-  height: 3000px;
+  height: 1600px;
 }
-section#fusuma h2 {
+section#fusuma #fusuma-animation {
   height: 100vh;
   position: sticky;
   top: 0;
-  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 500px;
+  perspective-origin: 50% 50%;
 }
 
+section#fusuma #fusuma-animation img {
+  width: 60%;
+}
+
+section#fusuma #fusuma-animation img:nth-child(1) {
+  transform-origin: top right;
+}
+
+section#fusuma #fusuma-animation img:nth-child(2) {
+  transform-origin: top left;
+}
 /* News */
 section#news {
   width: 100%;

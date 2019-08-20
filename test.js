@@ -35,15 +35,18 @@ function g() {
         const t = dom.top + window.scrollY
         const b = dom.bottom + window.scrollY
 
+        const sumires = fusuma.getElementsByTagName('img')
+        console.log(sumires)
+
         let r
         let s
 
         window.onscroll = () => {
             s = window.scrollY
             if (s < t || b < s) return
-            r = 1 - (s - t) / (b - t)
-            console.log(r)
-            fusuma.style.opacity = r
+            r = (s - t) / (b - t)
+            sumires[0].style.transform = `translateX(-${r*240}px) translateZ(${r*240}px)`
+            sumires[1].style.transform = `translateX(${r*240}px) translateZ(${r*240}px)`
         }
     }
 }
