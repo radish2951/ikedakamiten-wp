@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 <main id="main-home">
     <section id="main-image">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/08/IMGP1548__.jpg">
-        <img src="http://ikedakamiten.0am.jp/wp-content/uploads/2019/08/IMG_1958_.jpg">
-        <img src="/wp-content/uploads/2019/08/CIMG2746_small.jpg">
         <img src="/wp-content/uploads/2019/08/IMG_20181207_103641-2-2.jpg" style="object-position:right">
+        <img src="/wp-content/uploads/2019/08/IMGP1548__.jpg">
+        <img src="/wp-content/uploads/2019/08/IMG_1958_.jpg">
         <div id="company-name">
             <h1><?php echo get_option( 'blogname' ); ?></h1>
             <p>Ikeda Kamiten Co.,Ltd.</p>
@@ -14,9 +13,12 @@
 
     <section id="message">
         <h2 class="float">和の<span>安らぎ</span>を、秋田から。</h2>
-        <p class="float">和の風景。</p>
-        <p>秋田県秋田市に古くから伝わる伝統<br>「秋田竿燈まつり」。</p>
-        <p>私たちは提灯づくりを通じてその伝統を守り、受け継いでいます。</p>
+        <p class="float">
+            和の風景。<br>
+            秋田県秋田市に古くから伝わる伝統<br>
+            「秋田竿燈まつり」。<br>
+            私たちは提灯づくりを通じてその伝統を守り、受け継いでいます。
+        </p>
     </section>
 
     <section id="chochin">
@@ -72,7 +74,7 @@ if ( have_posts()) {
     </section>
 </main>
 
-<!--script src="<?php echo get_template_directory_uri(); ?>/float.js"></script-->
+<script src="<?php echo get_template_directory_uri(); ?>/float.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/chochin.js"></script>
 <!--script src="<?php echo get_template_directory_uri(); ?>/blur.js"></script-->
 <script src="<?php echo get_template_directory_uri(); ?>/test.js<?php echo '?v=' . rand(); ?>"></script>

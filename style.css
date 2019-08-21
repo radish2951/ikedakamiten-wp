@@ -170,7 +170,7 @@ section#main-image {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: black;
+  background: white;
   overflow: hidden;
   position: relative;
 }
@@ -187,32 +187,31 @@ section#main-image img {
 section#main-image #company-name {
   z-index: 1000;
   color: white;
-  width: 1300px;
+  width: 1600px;
   max-width: 100%;
 }
 
 section#main-image #company-name h1 {
-  font-size: 48px;
-  letter-spacing: 8px;
+  font-size: 36px;
+  letter-spacing: 10px;
   border-bottom: 1px solid white;
 }
 
 section#main-image #company-name p {
   width: 100%;
   margin: 0;
-  font-size: 16px;
-  letter-spacing: 5px;
+  font-size: 12px;
+  letter-spacing: 4px;
 }
 
 @media screen and (max-width: 768px) {
   section#main-image #company-name {
     writing-mode: vertical-lr;
     width: auto;
-    margin-left: -42px;
   }
 
   section#main-image #company-name h1 {
-    font-size: 42px;
+    font-size: 32px;
     letter-spacing: 4px;
     border-bottom: none;
     border-right: 1px solid white;
@@ -221,7 +220,9 @@ section#main-image #company-name p {
   section#main-image #company-name p {
     font-size: 14px;
     letter-spacing: 2px;
-    text-align: right
+    text-align: right;
+    margin: 4px 0;
+    line-height: 20px;
   }
 }
 
@@ -231,15 +232,14 @@ section#main-image #company-name p {
  * Messages
  */
 section#message {
-  margin: 10px;
-  padding: 120px 0;
-  background: #faf5f3;
-  color: #4f0103;
+  padding: 80px 0;
+  /*background: #f9edd5;*/
+  color: #6f2123;
 }
 
 section#message h2 {
   font-size: 90px;
-  margin: 30px auto 120px auto;
+  margin: 30px auto 80px auto;
   text-align: center;
 }
 
@@ -269,6 +269,7 @@ section#chochin {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background: black;
 }
 
 section#chochin img {
@@ -281,6 +282,7 @@ section#chochin h2 {
   font-size: 70px;
   width: calc(5*100%/7);
   text-align: center;
+  color: white;
 }
 
 section#try-chochin {
