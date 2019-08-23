@@ -1,6 +1,6 @@
 const images = document.querySelectorAll('#main-image img');
 const n = images.length;
-const visibleDuration = 5;
+const visibleDuration = 4;
 const transitDuration = 1.8;
 const unitDuration = visibleDuration + transitDuration;
 const totalDuration = unitDuration * n;

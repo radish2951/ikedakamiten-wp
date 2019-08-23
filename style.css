@@ -8,6 +8,12 @@ Version: 1.0
 
 
 
+/*
+ * Variables
+ */
+:root {
+  --home-width: 1000px;
+}
 
 
 /*
@@ -17,12 +23,14 @@ body {
   margin: 0;
   font-family: "Times New Roman", "Noto Serif JP", "Yu Mincho", serif;
   overflow-x: hidden;
+  color: #6f2123;
+  background: #fffeea;
 }
 
 a {
   text-decoration: none;
   color: black;
-  border-bottom: 2px solid;
+  border-bottom: 1.2px solid;
   transition: color 200ms;
 }
 
@@ -50,26 +58,30 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 }
 
 p {
+  /*
   font-size: 18px;
   line-height: 44px;
   margin: 30px auto;
   width: 500px;
   max-width: 80%;
   text-align: justify;
+  */
 }
 
 ul li {
   list-style: none;
 }
 
-
-
-/*
- * Variables
- */
-:root {
-  --break: 768px;
+section {
+  width: var(--home-width);
+  max-width: 100%;
+  overflow-x: visible;
+  position: relative;
+  margin: 0 auto;
 }
+
+
+
 
 
 /*
@@ -169,10 +181,10 @@ section#main-image {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background: white;
   overflow: hidden;
-  position: relative;
 }
 
 section#main-image img {
@@ -188,7 +200,7 @@ section#main-image #company-name {
   z-index: 1000;
   color: white;
   width: 1600px;
-  max-width: 100%;
+  max-width: 96%;
 }
 
 section#main-image #company-name h1 {
@@ -232,15 +244,22 @@ section#main-image #company-name p {
  * Messages
  */
 section#message {
-  padding: 80px 0;
-  /*background: #f9edd5;*/
   color: #6f2123;
+  width:  100%;
 }
 
 section#message h2 {
   font-size: 90px;
-  margin: 30px auto 80px auto;
+  margin: 80px 10%;
   text-align: center;
+}
+
+section#message p {
+  width: 600px;
+  max-width: 68%;
+  margin: 80px auto;
+  font-size: 18px;
+  line-height: 36px;
 }
 
 @media screen and (max-width: 768px) {
@@ -249,11 +268,11 @@ section#message h2 {
     text-align: justify;
     word-wrap: break-word;
     font-size: 40px;
-    max-width: 80%;
   }
 
   section#message p {
-    max-width: 80%;
+    font-size: 16px;
+    line-height: 32px;
   }
 }
 
@@ -285,17 +304,6 @@ section#chochin h2 {
   color: white;
 }
 
-section#try-chochin {
-  margin: 10px;
-  padding-top: 50px;
-}
-
-section#try-chochin img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-
 @media screen and (max-width: 768px) {
   section#chochin img {
     width: calc(100%/5 + 1%);
@@ -309,9 +317,85 @@ section#try-chochin img {
     margin: 20px 0;
   }
 }
-section#fusuma {
-  height: 1600px;
+
+
+section.product {
+  margin: 120px auto;
 }
+
+section.product h2 {
+  position: absolute;
+  writing-mode: vertical-rl;
+  top: 50px;
+  left: 30px;
+  z-index: 10000;
+  font-size: 78px;
+}
+
+section.product > img {
+  width: 100%;
+  max-width: 630px;
+  height: auto;
+  display: block;
+}
+
+section.product p {
+  width: 50%;
+  margin: 72px 8% 72px auto;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+section.product:nth-child(odd) p {
+  margin: 72px auto 72px 8%;
+}
+
+section.product .img-box {
+  /*
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.product .img-box img {
+  /*
+  width: 60vw;
+  height: 60vw;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  scroll-snap-align: center;
+  */
+  width: 42vw;
+  height: 42vw;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+section#fusuma h2 {
+  right: 30px;
+  left: auto;
+}
+
+section#fusuma > img {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  section.product h2 {
+    font-size: 54px;
+  }
+}
+
 section#fusuma #fusuma-animation {
   height: 100vh;
   position: sticky;
@@ -337,49 +421,97 @@ section#fusuma #fusuma-animation img:nth-child(2) {
 }
 /* News */
 section#news {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto; }
-  section#news article {
-    margin: 24px auto;
-    text-align: center; }
+  width: 720px;
+  margin: 120px auto;
+}
+
+section#news h2 {
+  text-align: center;
+  font-size: 21px;
+}
+
+
+section#news article {
+  margin: 56px auto;
+}
+
+section#news article h3 {
+  font-size: 24px;
+}
+
+section#news article time {
+  margin-top: 4px;
+  margin-bottom: 32px;
+  display: block;
+}
+
+section#news article p {
+  margin-left: 28px;
+  color: black;
+  font-size: 16px;
+  line-height: 32px;
+}
 
 @media screen and (max-width: 768px) {
+
   section#news {
-    margin-top: 96px; }
-    section#news article {
-      width: 96%; }
-      section#news article h2 {
-        font-size: 18px; } }
+    max-width: 92%;
+  }
+
+  section#news article h3 {
+    font-size: 18px;
+  }
+}
+
 /* Footer */
 footer#footer {
   background: gray;
-  color: white;
-  margin-top: 96px;
-  padding: 64px 0; }
-  footer#footer #footer-company-information {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto; }
-    footer#footer #footer-company-information p {
-      font-size: 16px; }
-      footer#footer #footer-company-information p.company-name {
-        font-size: 24px;
-        margin-bottom: 12px; }
-      footer#footer #footer-company-information p a {
-        color: white;
-        border: none; }
+  color: lightgray;
+  padding: 48px 0;
+}
+
+footer#footer #footer-company-information {
+  width: 96%;
+  max-width: var(--home-width);
+  margin: 0 auto;
+}
+
+footer#footer #footer-company-information p {
+  font-size: 16px;
+}
+
+footer#footer #footer-company-information p:first-child {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+footer#footer #footer-company-information p:last-child {
+  font-size: 13px;
+  margin-top: 32px;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
+
   footer#footer {
-    padding: 48px 0; }
-    footer#footer #footer-company-information {
-      width: 80%;
-      text-align: right; }
-      footer#footer #footer-company-information .company-name {
-        font-size: 16px; }
-      footer#footer #footer-company-information p {
-        font-size: 13px; } }
+    padding: 32px 0;
+  }
+
+  footer#footer #footer-company-information p {
+    font-size: 13px;
+  }
+
+  footer#footer #footer-company-information p:first-child {
+    font-size: 15px;
+  }
+
+  footer#footer #footer-company-information p:last-child {
+    font-size: 11px;
+  }
+
+}
+
+
 main#main-singular, main#main-archive {
   width: 100%;
   max-width: 700px;
