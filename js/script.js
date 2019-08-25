@@ -11,10 +11,8 @@ style.innerText = `
     @keyframes slideshow {
         0% {
             opacity: 0;
-            filter: blur(8px);
         } ${100 * transitDuration / totalDuration}% {
             opacity: 1;
-            filter: blur(0);
         } ${100 * unitDuration / totalDuration}% {
             opacity: 1;
         } ${100 * (unitDuration + transitDuration) / totalDuration}% {

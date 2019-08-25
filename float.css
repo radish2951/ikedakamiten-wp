@@ -1,14 +1,8 @@
 .float {
     opacity: 0;
-    filter: blur(5px);
-    /*
-    padding-top: 50px;
-    transition: opacity 2s, padding-top 2s;
-    */
   transition: opacity 2s, filter 1s;
 }
 
 .float.appeared {
     opacity: 1;
-    filter: blur(0);
 }

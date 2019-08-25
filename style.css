@@ -329,7 +329,7 @@ section.product h2 {
   top: 50px;
   left: 30px;
   z-index: 10000;
-  font-size: 78px;
+  font-size: 63px;
 }
 
 section.product > img {
@@ -351,12 +351,6 @@ section.product:nth-child(odd) p {
 }
 
 section.product .img-box {
-  /*
-  display: flex;
-  flex-flow: row nowrap;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -364,14 +358,6 @@ section.product .img-box {
 }
 
 section.product .img-box img {
-  /*
-  width: 60vw;
-  height: 60vw;
-  max-width: 300px;
-  max-height: 300px;
-  object-fit: contain;
-  scroll-snap-align: center;
-  */
   width: 42vw;
   height: 42vw;
   max-width: 300px;
@@ -512,39 +498,54 @@ footer#footer #footer-company-information p:last-child {
 }
 
 
-main#main-singular, main#main-archive {
-  width: 100%;
+main:not(#main-home) {
   max-width: 700px;
-  margin: 150px auto; }
-  main#main-singular article, main#main-archive article {
-    margin: 150px auto; }
-    main#main-singular article .date, main#main-archive article .date {
-      margin: 24px 0;
-      text-align: center; }
-    main#main-singular article p, main#main-archive article p {
-      margin: 24px 0;
-      text-align: justify;
-      font-size: 18px; }
-main#main-singular .title {
-  font-size: 54px;
-  text-align: left;
-  margin-bottom: 54px; }
-main#main-archive h1 {
-  text-align: center; }
-main#main-archive .title {
-  font-size: 36px;
-  text-align: center; }
+  margin: 0 auto;
+}
+
+main:not(#main-home) article {
+  margin: 150px auto;
+}
+
+main:not(#main-home) article time {
+  display: inline-block;
+  font-size: 14px;
+  margin: 8px 0 12px 0;
+  text-align: center;
+}
+
+main:not(#main-home) article p {
+  margin: 16px 0;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+main#main-singular h1 {
+  font-size: 28px;
+}
+
+main#main-archive h2 {
+  font-size: 28px;
+}
 
 @media screen and (max-width: 768px) {
-  main#main-singular {
-    margin-top: 96px; }
-    main#main-singular article {
-      width: 80%;
-      margin: 96px auto; }
-      main#main-singular article .title {
-        font-size: 28px; }
-  main#main-archive article {
-    width: 80%;
-    margin: 96px auto; }
-    main#main-archive article .title {
-      font-size: 24px; } }
+
+  main:not(#main-home) article {
+    width: 85%;
+    margin: 96px auto;
+  }
+
+  main:not(#main-home) article p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  main#main-archive article h2 {
+    font-size: 21px;
+  }
+
+  main#main-singular article h1 {
+    font-size: 21px;
+  }
+}

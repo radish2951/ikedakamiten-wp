@@ -10,8 +10,8 @@ if ( have_posts() ) {
 <article>
 <?php
         the_post();
-        the_title('<h2 class="title"><a href="' . get_permalink() . '">', '</a></h2>');
-        the_date('', '<p class="date"><time>', '</time></p>');
+        the_title('<h2><a href="' . get_permalink() . '">', '</a></h2>');
+        the_date('', '<time>', '</time>');
         the_content();
 ?>
 </article>

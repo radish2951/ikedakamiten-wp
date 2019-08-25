@@ -6,7 +6,9 @@ function callback(entries, observer) {
     });
 };
 
-const observer = new IntersectionObserver(callback, {threshold: 0.9});
+const observer = new IntersectionObserver(callback, {
+    rootMargin: '0px 0px -20% 0px'
+});
 
 const floatElements = document.getElementsByClassName('float');
 

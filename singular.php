@@ -9,9 +9,9 @@ if ( have_posts() ) {
 <article>
 <?php
         the_post();
-        the_title('<h1 class="title">', '</h1>');
+        the_title('<h1>', '</h1>');
         if ( is_single() ) {
-            the_date('', '<p class="date"><time>', '</time></p>');
+            the_date('', '<time>', '</time>');
         }
         the_content();
 ?>
