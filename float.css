@@ -1,8 +1,0 @@
-.float {
-    opacity: 0;
-  transition: opacity 2s, filter 1s;
-}
-
-.float.appeared {
-    opacity: 1;
-}

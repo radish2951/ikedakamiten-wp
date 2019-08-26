@@ -5,7 +5,7 @@
         <img src="/wp-content/uploads/2019/08/IMG_1958_.jpg">
         <div id="company-name">
             <h1><?php echo get_option( 'blogname' ); ?></h1>
-            <p>Ikeda Kamiten Co.,Ltd.</p>
+            <p>Ikeda Kamiten Co., Ltd.</p>
         </div>
     </section>
 <script src="<?php echo get_template_directory_uri() . '/js/script.js?v=' . rand(); ?>"></script>
@@ -69,7 +69,7 @@
     </section>
 
 <section id="news">
-<h2 class="float">お知らせ</h2>
+<h2 class="float title">お知らせ</h2>
 <?php
 query_posts( 'cat=3' );
 if ( have_posts()) {
@@ -78,7 +78,7 @@ if ( have_posts()) {
 ?>
 <article class="float">
 <?php
-        the_title('<h3>', '</h3>');
+        the_title('<h3><a href="' . get_permalink() . '">', '</a></h3>');
         the_date('', '<time>', '</time>');
         the_content();
 ?>
@@ -90,5 +90,4 @@ if ( have_posts()) {
     </section>
 </main>
 
-<script src="<?php echo get_template_directory_uri(); ?>/float.js?v=<?php echo rand(); ?>"></script>
 <?php get_footer(); ?>

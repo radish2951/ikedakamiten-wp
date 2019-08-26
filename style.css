@@ -13,6 +13,10 @@ Version: 1.0
  */
 :root {
   --home-width: 1000px;
+  --text-color: #6f2123;
+  --bg-color: #fffeea;
+  --dark-color: #333;
+  --hover-color: orange;
 }
 
 
@@ -23,32 +27,24 @@ body {
   margin: 0;
   font-family: "Times New Roman", "Noto Serif JP", "Yu Mincho", serif;
   overflow-x: hidden;
-  color: #6f2123;
-  background: #fffeea;
+  color: var(--text-color);
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--dark-color);
   border-bottom: 1.2px solid;
   transition: color 200ms;
 }
 
 a:hover {
-    color: lightgray;
-}
-
-p.button {
-  text-align: center;
-}
-
-p.button a {
-  color: gray;
-  background: white;
-  border: 2px solid gray;
-  border-radius: 6px;
-  padding: 12px;
-  margin: 0 auto;
+    color: var(--hover-color);
 }
 
 p, h1, h2, h3, h4, h5, h6, ul, li {
@@ -57,27 +53,18 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   font-weight: normal;
 }
 
-p {
-  /*
-  font-size: 18px;
-  line-height: 44px;
-  margin: 30px auto;
-  width: 500px;
-  max-width: 80%;
-  text-align: justify;
-  */
-}
-
 ul li {
   list-style: none;
+}
+
+main {
+  width: 100%;
 }
 
 section {
   width: var(--home-width);
   max-width: 100%;
-  overflow-x: visible;
   position: relative;
-  margin: 0 auto;
 }
 
 
@@ -154,7 +141,7 @@ header#header nav ul li {
   }
 
   header#header nav ul li a {
-    color: black;
+    color: var(--dark-color);
   }
 
   header#header.full {
@@ -244,7 +231,7 @@ section#main-image #company-name p {
  * Messages
  */
 section#message {
-  color: #6f2123;
+  color: var(--text-color);
   width:  100%;
 }
 
@@ -328,7 +315,7 @@ section.product h2 {
   writing-mode: vertical-rl;
   top: 50px;
   left: 30px;
-  z-index: 10000;
+  z-index: 1000;
   font-size: 63px;
 }
 
@@ -409,51 +396,61 @@ section#fusuma #fusuma-animation img:nth-child(2) {
 section#news {
   width: 720px;
   margin: 120px auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
-
-section#news h2 {
-  text-align: center;
-  font-size: 21px;
-}
-
 
 section#news article {
-  margin: 56px auto;
+  width: 100%;
+  margin: 28px 0;
 }
 
 section#news article h3 {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 section#news article time {
   margin-top: 4px;
   margin-bottom: 32px;
   display: block;
+  font-size: 14px;
 }
 
 section#news article p {
   margin-left: 28px;
-  color: black;
-  font-size: 16px;
-  line-height: 32px;
+  color: var(--dark-color);
+  font-size: 15px;
+  line-height: 28px;
 }
 
 @media screen and (max-width: 768px) {
 
   section#news {
-    max-width: 92%;
+    max-width: 81%;
   }
 
   section#news article h3 {
-    font-size: 18px;
+    font-size: 17px;
+  }
+
+  section#news article time {
+    margin-bottom: 21px;
+  }
+
+  section#news article p {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
 /* Footer */
 footer#footer {
+  width: 100%;
   background: gray;
   color: lightgray;
-  padding: 48px 0;
+  padding: 36px 0;
+  margin-top: auto;
 }
 
 footer#footer #footer-company-information {
@@ -463,16 +460,16 @@ footer#footer #footer-company-information {
 }
 
 footer#footer #footer-company-information p {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 footer#footer #footer-company-information p:first-child {
-  font-size: 32px;
+  font-size: 21px;
   margin-bottom: 12px;
 }
 
 footer#footer #footer-company-information p:last-child {
-  font-size: 13px;
+  font-size: 11px;
   margin-top: 32px;
   text-align: center;
 }
@@ -483,38 +480,50 @@ footer#footer #footer-company-information p:last-child {
     padding: 32px 0;
   }
 
+  footer#footer #footer-company-information {
+    width: 63%;
+  }
+
   footer#footer #footer-company-information p {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   footer#footer #footer-company-information p:first-child {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   footer#footer #footer-company-information p:last-child {
-    font-size: 11px;
+    font-size: 10px;
   }
 
 }
 
 
 main:not(#main-home) {
+  width: 100%;
   max-width: 700px;
-  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-top: 96px;
 }
 
 main:not(#main-home) article {
-  margin: 150px auto;
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: start;
 }
 
 main:not(#main-home) article time {
-  display: inline-block;
   font-size: 14px;
   margin: 8px 0 12px 0;
-  text-align: center;
 }
 
 main:not(#main-home) article p {
+  width: 100%;
   margin: 16px 0;
   text-align: justify;
   font-size: 16px;
@@ -525,6 +534,16 @@ main#main-singular h1 {
   font-size: 28px;
 }
 
+.title, main#main-singular h1.title {
+  align-self: center;
+  width: auto;
+  border: 1px solid;
+  font-size: 18px;
+  padding: 12px 24px;
+  margin: 42px 0;
+  border-radius: 1000px;
+}
+
 main#main-archive h2 {
   font-size: 28px;
 }
@@ -533,7 +552,7 @@ main#main-archive h2 {
 
   main:not(#main-home) article {
     width: 85%;
-    margin: 96px auto;
+    margin: 36px auto;
   }
 
   main:not(#main-home) article p {
@@ -547,5 +566,52 @@ main#main-archive h2 {
 
   main#main-singular article h1 {
     font-size: 21px;
+  }
+}
+
+
+
+main#main-singular.page-22 {
+  width: 100%;
+  max-width: 100%;
+}
+
+main#main-singular.page-22 article {
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+}
+
+main#main-singular.page-22 article table {
+  border-spacing: 0 24px;
+}
+
+main#main-singular.page-22 article table tr td:first-child {
+  text-align: right;
+  padding-right: 12px;
+}
+
+main#main-singular.page-22 article table tr td:last-child {
+  text-align: left;
+  border-left: 3px solid lightgray;
+  padding-left: 12px;
+}
+
+main#main-singular.page-22 article figure#google-map {
+  width: 100%;
+  height: 640px;
+  max-height: 100vw;
+  margin: 48px 0;
+}
+
+main#main-singular.page-22 article figure iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  main#main-singular article table {
+    font-size: 12px;
   }
 }

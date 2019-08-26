@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<main id="main-archive">
-<?php the_archive_description('<h1 class="title">', '</h1>'); ?>
+<main id="main-singular" class="page-<?php echo get_the_ID(); ?>">
 
 <?php
 if ( have_posts() ) {
@@ -10,8 +9,10 @@ if ( have_posts() ) {
 <article>
 <?php
         the_post();
-        the_title('<h2><a href="' . get_permalink() . '">', '</a></h2>');
-        the_date('', '<time>', '</time>');
+        the_title('<h1 class="title">', '</h1>');
+        if ( is_single() ) {
+            the_date('', '<time>', '</time>');
+        }
         the_content();
 ?>
 </article>
