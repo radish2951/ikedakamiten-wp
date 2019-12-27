@@ -17,6 +17,8 @@ Version: 1.0
   --bg-color: #fffeea;
   --dark-color: #333;
   --hover-color: orange;
+  --font-mincho: "Noto Serif JP", "Yu Mincho", serif;
+  --font-gothic: "Yu Gothic", sans-serif;
 }
 
 
@@ -25,7 +27,6 @@ Version: 1.0
  */
 body {
   margin: 0;
-  font-family: "Times New Roman", "Noto Serif JP", "Yu Mincho", serif;
   overflow-x: hidden;
   color: var(--text-color);
   background: var(--bg-color);
@@ -53,6 +54,10 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   font-weight: normal;
 }
 
+li {
+  line-height: 300%;
+}
+
 ul li {
   list-style: none;
 }
@@ -76,6 +81,7 @@ section {
  */
 header#header {
   width: 100%;
+  font-family: var(--font-mincho);
   position: fixed;
   top: 0;
   z-index: 10000;
@@ -158,6 +164,11 @@ header#header nav ul li {
   }
 }
 
+
+
+main#main-home {
+  font-family: var(--font-mincho);
+}
 
 
 /*
@@ -316,7 +327,7 @@ section.product h2 {
   top: 50px;
   left: 30px;
   z-index: 1000;
-  font-size: 63px;
+  font-size: 81px;
 }
 
 section.product > img {
@@ -402,6 +413,7 @@ section#news {
 }
 
 section#news article {
+  font-family: "Yu Gothic";
   width: 100%;
   margin: 28px 0;
 }
@@ -446,9 +458,10 @@ section#news article p {
 
 /* Footer */
 footer#footer {
+  font-family: var(--font-mincho);
   width: 100%;
-  background: gray;
-  color: lightgray;
+  /*background: gray;*/
+  color: var(--dark-color);
   padding: 36px 0;
   margin-top: auto;
 }
@@ -468,8 +481,8 @@ footer#footer #footer-company-information p:first-child {
   margin-bottom: 12px;
 }
 
-footer#footer #footer-company-information p:last-child {
-  font-size: 11px;
+footer#footer p:last-child {
+  font-size: 10px;
   margin-top: 32px;
   text-align: center;
 }
@@ -492,8 +505,8 @@ footer#footer #footer-company-information p:last-child {
     font-size: 13px;
   }
 
-  footer#footer #footer-company-information p:last-child {
-    font-size: 10px;
+  footer#footer p:last-child {
+    font-size: 9px;
   }
 
 }
@@ -509,6 +522,7 @@ main:not(#main-home) {
 }
 
 main:not(#main-home) article {
+  font-family: var(--font-gothic);
   width: 100%;
   margin: 50px 0;
   display: flex;
@@ -535,6 +549,7 @@ main#main-singular h1 {
 }
 
 .title, main#main-singular h1.title {
+  font-family: var(--font-mincho);
   align-self: center;
   width: auto;
   border: 1px solid;
@@ -545,7 +560,7 @@ main#main-singular h1 {
 }
 
 main#main-archive h2 {
-  font-size: 28px;
+  font-size: 38px;
 }
 
 @media screen and (max-width: 768px) {

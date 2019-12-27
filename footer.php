@@ -3,13 +3,17 @@
         'container'  => false,
         'items_wrap' => '<nav><ul>%3$s</ul></nav>',
     ));*/ ?>
+<!--
     <section id="footer-company-information">
-        <p>有限会社 池田紙店</p>
-        <p>010-0921</p>
-        <p>秋田県秋田市大町1-5-30</p>
-        <p>018-862-4617</p>
-        <p>Ikeda Kamiten Co., Ltd. All rights reserved.</p>
+    <p><?php echo get_option('company_name'); ?></p>
+    <p>〒<?php echo get_option('postal_code'); ?></p>
+    <p><?php echo get_option('address'); ?></p>
+    <p>TEL: <?php echo get_option('tel'); ?></p>
+    <p>FAX: <?php echo get_option('fax'); ?></p>
+    <p>EMAIL: <?php echo get_option('email'); ?></p>
     </section>
+-->
+    <p><?php echo get_option('company_name_en'); ?> All rights reserved.</p>
 </footer>
 <script src="<?php echo get_template_directory_uri(); ?>/float.js?v=<?php echo rand(); ?>"></script>
 </body>

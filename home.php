@@ -4,8 +4,8 @@
         <img src="/wp-content/uploads/2019/08/IMG_20181207_103641-2-2.jpg" style="object-position:right">
         <img src="/wp-content/uploads/2019/08/IMG_1958_.jpg">
         <div id="company-name">
-            <h1><?php echo get_option( 'blogname' ); ?></h1>
-            <p>Ikeda Kamiten Co., Ltd.</p>
+            <h1><?php echo get_option( 'company_name' ); ?></h1>
+            <p><?php echo get_option('company_name_en'); ?></p>
         </div>
     </section>
 <script src="<?php echo get_template_directory_uri() . '/js/script.js?v=' . rand(); ?>"></script>

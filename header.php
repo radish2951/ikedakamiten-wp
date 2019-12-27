@@ -5,7 +5,7 @@
     <meta name="description" content="<?php bloginfo( 'description' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php wp_title('|', true, 'right'); ?>池田紙店オフィシャルウェブサイト</title>
+    <title><?php wp_title('|', true, 'right'); ?><?php echo get_option('blogname'); ?></title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri() . "?v=" . rand(); ?>">
     <?php wp_head(); ?>
