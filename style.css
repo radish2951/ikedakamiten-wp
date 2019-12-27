@@ -14,7 +14,7 @@ Version: 1.0
 :root {
   --home-width: 1000px;
   --text-color: #6f2123;
-  --bg-color: #fffeea;
+  --bg-color: #fbf8ea;
   --dark-color: #333;
   --hover-color: orange;
   --font-mincho: "Noto Serif JP", "Yu Mincho", serif;
@@ -204,7 +204,7 @@ section#main-image #company-name {
 section#main-image #company-name h1 {
   font-size: 36px;
   letter-spacing: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--text-color);
 }
 
 section#main-image #company-name p {
@@ -218,13 +218,18 @@ section#main-image #company-name p {
   section#main-image #company-name {
     writing-mode: vertical-lr;
     width: auto;
+    margin-top: 54%;
+    margin-left: 30%;
+    background: white;
+    padding: 2px;
+    color: var(--text-color);
   }
 
   section#main-image #company-name h1 {
-    font-size: 32px;
-    letter-spacing: 4px;
+    font-size: 30px;
+    letter-spacing: 5px;
     border-bottom: none;
-    border-right: 1px solid white;
+    border-right: 1px solid var(--text-color);
   }
 
   section#main-image #company-name p {
@@ -247,7 +252,7 @@ section#message {
 }
 
 section#message h2 {
-  font-size: 90px;
+  font-size: 81px;
   margin: 80px 10%;
   text-align: center;
 }
@@ -276,49 +281,15 @@ section#message p {
 
 
 
-
-
-/*
- * Chochin
- */
-section#chochin {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background: black;
-}
-
-section#chochin img {
-  object-fit: contain;
-  width: calc(100%/8 + 1%);
-  height: 33vh;
-}
-
-section#chochin h2 {
-  font-size: 70px;
-  width: calc(5*100%/7);
-  text-align: center;
-  color: white;
-}
-
-@media screen and (max-width: 768px) {
-  section#chochin img {
-    width: calc(100%/5 + 1%);
-    height: auto;
-  }
-  section#chochin h2 {
-    width: 100%;
-    text-align: justify;
-    word-wrap: break-word;
-    font-size: 48px;
-    margin: 20px 0;
-  }
-}
-
-
 section.product {
   margin: 120px auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
+
+section.product:nth-child(odd) {
+  flex-flow: row-reverse wrap;
 }
 
 section.product h2 {
@@ -327,32 +298,39 @@ section.product h2 {
   top: 50px;
   left: 30px;
   z-index: 1000;
-  font-size: 81px;
+  font-size: 54px;
+  background: white;
 }
 
 section.product > img {
   width: 100%;
   max-width: 630px;
   height: auto;
-  display: block;
 }
 
 section.product p {
-  width: 50%;
-  margin: 72px 8% 72px auto;
   font-size: 15px;
   line-height: 30px;
+  flex: 1;
+  margin: 28px;
+  min-width: 200px;
+  max-width: 100%;
 }
 
-section.product:nth-child(odd) p {
-  margin: 72px auto 72px 8%;
+section.product:nth-child(odd) h2 {
+  right: 30px;
+  left: auto;
 }
+
 
 section.product .img-box {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  flex-shrink: 0;
+  margin: 60px 0;
 }
 
 section.product .img-box img {
@@ -363,46 +341,24 @@ section.product .img-box img {
   object-fit: contain;
 }
 
-section#fusuma h2 {
-  right: 30px;
-  left: auto;
-}
-
-section#fusuma > img {
-  margin-right: 0;
-  margin-left: auto;
-}
-
 @media screen and (max-width: 768px) {
 
   section.product h2 {
     font-size: 54px;
   }
+
+  section.product p {
+    padding-left: 120px;
+  }
+
+  section.product:nth-child(odd) p {
+    padding-left: 0;
+    padding-right: 120px;
+  }
 }
 
-section#fusuma #fusuma-animation {
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 500px;
-  perspective-origin: 50% 50%;
-}
 
-section#fusuma #fusuma-animation img {
-  width: 60%;
-}
 
-section#fusuma #fusuma-animation img:nth-child(1) {
-  transform-origin: top right;
-}
-
-section#fusuma #fusuma-animation img:nth-child(2) {
-  transform-origin: top left;
-}
 /* News */
 section#news {
   width: 720px;
