@@ -18,8 +18,8 @@ function show_ikedakamiten_options_page() {
         <form method="post" action="options.php">
         <style>input[type="text"], textarea { width: 500px; }</style>';
 
-    settings_fields('default');
-    settings_fields('company');
+    settings_fields('message');
+    //settings_fields('company');
     do_settings_sections('options');
     submit_button(); 
 
@@ -32,24 +32,24 @@ add_action("admin_menu", "add_new_menu_items");
     /*WordPress Settings API Demo*/
 
 function display_options() {
-    add_settings_section('default', 'トップページ設定', null, 'options');
+    add_settings_section('message', 'トップページ設定', null, 'options');
 
-    add_settings_field('main_slogan', 'キャッチコピー', "display_main_slogan", "options", 'default');
-    add_settings_field('main_message', 'メインメッセージ', "display_main_message", "options", 'default');
-    add_settings_field('chochin_slogan', '提灯キャッチコピー', "display_chochin_slogan", "options", 'default');
-    add_settings_field('chochin_message', '提灯メッセージ', "display_chochin_message", "options", 'default');
-    add_settings_field('fusuma_slogan', 'ふすま/障子キャッチコピー', "display_fusuma_slogan", "options", 'default');
-    add_settings_field('fusuma_message', 'ふすま/障子メッセージ', "display_fusuma_message", "options", 'default');
+    add_settings_field('main_slogan', 'キャッチコピー', "display_main_slogan", "options", 'message');
+    add_settings_field('main_message', 'メインメッセージ', "display_main_message", "options", 'message');
+    add_settings_field('chochin_slogan', '提灯キャッチコピー', "display_chochin_slogan", "options", 'message');
+    add_settings_field('chochin_message', '提灯メッセージ', "display_chochin_message", "options", 'message');
+    add_settings_field('fusuma_slogan', 'ふすま/障子キャッチコピー', "display_fusuma_slogan", "options", 'message');
+    add_settings_field('fusuma_message', 'ふすま/障子メッセージ', "display_fusuma_message", "options", 'message');
 
-    register_setting('default', 'main_slogan');
-    register_setting('default', 'main_message');
-    register_setting('default', 'chochin_slogan');
-    register_setting('default', 'chochin_message');
-    register_setting('default', 'fusuma_slogan');
-    register_setting('default', 'fusuma_message');
+    register_setting('message', 'main_slogan');
+    register_setting('message', 'main_message');
+    register_setting('message', 'chochin_slogan');
+    register_setting('message', 'chochin_message');
+    register_setting('message', 'fusuma_slogan');
+    register_setting('message', 'fusuma_message');
 
 
-
+/*
     add_settings_section('company', '会社設定', null, 'options');
 
     add_settings_field('company_name', '会社名', 'display_company_name', 'options', 'company');
@@ -67,6 +67,7 @@ function display_options() {
     register_setting('company', 'tel');
     register_setting('company', 'fax');
     register_setting('company', 'email');
+*/
 }
 
 function display_main_slogan() { input('main_slogan'); }
@@ -76,6 +77,7 @@ function display_chochin_message() { textarea('chochin_message'); }
 function display_fusuma_slogan() { input('fusuma_slogan'); }
 function display_fusuma_message() { textarea('fusuma_message'); }
 
+/*
 function display_company_name() { input('company_name'); }
 function display_company_name_en() { input('company_name_en'); }
 function display_postal_code() { input('postal_code'); }
@@ -83,7 +85,7 @@ function display_address() { input('address'); }
 function display_tel() { input('tel'); }
 function display_fax() { input('fax'); }
 function display_email() { input('email'); }
-
+*/
 function input($id) {
     echo '<input type="text" name="' . $id . '" id="' . $id . '" value="' . get_option($id) . '">';
 }
