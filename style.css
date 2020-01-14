@@ -375,19 +375,21 @@ section#news {
   width: 720px;
   margin: 120px auto;
   display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
+  flex-flow: column wrap;
 }
 
-section#news .articles {
+section#news div {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+}
+
+section#news div div {
+  flex: 1;
+  margin: 24px 0;
 }
 
 section#news article {
   font-family: var(--font-gothic);
-  width: 48%;
   margin: 12px 0;
 }
 
@@ -403,6 +405,11 @@ section#news article time {
 
   section#news {
     max-width: 81%;
+  }
+
+  section#news div {
+    flex-direction: column;
+    width: 100%;
   }
 
   section#news article {

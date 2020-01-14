@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<!-- facebook -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v5.0"></script>
+<!-- facebook -->
 <main id="main-home">
     <section id="main-image">
         <img src="/wp-content/uploads/2019/08/IMG_20181207_103641-2-2.jpg" style="object-position:right">
@@ -39,7 +43,8 @@
 
 <section id="news">
 <h2 class="float title">お知らせ</h2>
-<div class="articles">
+<div>
+<div>
 <?php
 query_posts( 'cat=3' );
 if ( have_posts()) {
@@ -56,6 +61,10 @@ if ( have_posts()) {
     }
 }
 ?>
+</div>
+	<!-- facebook -->
+	<div class="fb-page" data-href="https://www.facebook.com/%E6%9C%89%E9%99%90%E4%BC%9A%E7%A4%BE%E6%B1%A0%E7%94%B0%E7%B4%99%E5%BA%97-2169084943134297/" data-tabs="timeline" data-width="500" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/%E6%9C%89%E9%99%90%E4%BC%9A%E7%A4%BE%E6%B1%A0%E7%94%B0%E7%B4%99%E5%BA%97-2169084943134297/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/%E6%9C%89%E9%99%90%E4%BC%9A%E7%A4%BE%E6%B1%A0%E7%94%B0%E7%B4%99%E5%BA%97-2169084943134297/">有限会社池田紙店</a></blockquote></div>
+	<!-- facebook -->
 </div>
     </section>
 </main>
