@@ -5,8 +5,9 @@
 <!-- facebook -->
 <main id="main-home">
     <section id="main-image">
-        <img src="/wp-content/uploads/2019/08/IMG_20181207_103641-2-2.jpg" style="object-position:right">
-        <img src="/wp-content/uploads/2019/08/IMG_1958_.jpg">
+        <img src="/wp-content/uploads/main01.jpg" style="object-position:right">
+        <img src="/wp-content/uploads/main02.jpg">
+        <img src="/wp-content/uploads/main03.jpg">
         <div id="company-name">
             <h1><?php echo get_option( 'company_name' ); ?></h1>
             <p><?php echo get_option('company_name_en'); ?></p>
@@ -21,23 +22,23 @@
 
     <section id="chochin" class="product">
     <h2 class="float"><?php echo get_option('chochin_slogan'); ?></h2>
-        <img class="float" src="/wp-content/uploads/2019/08/20150720_104052-Edit.jpg">
+        <img class="float" src="/wp-content/uploads/chochin_main.jpg">
         <p class="float"><?php echo get_option_with_newline('chochin_message'); ?></p>
         <div class="img-box">
-            <img class="float" src="/wp-content/uploads/2019/08/20150627_164200-Edit.jpg">
-            <img class="float" src="/wp-content/uploads/2019/08/20141130_152833.jpg">
-            <img class="float" src="/wp-content/uploads/2019/08/52475650_2228233893886068_3473433270245392384_n_.jpg">
+            <img class="float" src="/wp-content/uploads/chochin01.jpg">
+            <img class="float" src="/wp-content/uploads/chochin02.jpg">
+            <img class="float" src="/wp-content/uploads/chochin03.jpg">
         </div>
     </section>
 
     <section id="fusuma" class="product">
         <h2 class="float"><?php echo get_option('fusuma_slogan'); ?></h2>
-        <img class="float" src="/wp-content/uploads/2019/08/IMG_1962.jpg">
+        <img class="float" src="/wp-content/uploads/washi_main.jpg">
         <p class="float"><?php echo get_option_with_newline('fusuma_message'); ?></p>
         <div class="img-box">
-            <img class="float" src="/wp-content/uploads/2019/08/DSC_0335__.jpg">
-            <img class="float" src="/wp-content/uploads/2019/08/IMG_1969_.jpg">
-            <img class="float" src="/wp-content/uploads/2019/08/52475650_2228233893886068_3473433270245392384_n_.jpg">
+            <img class="float" src="/wp-content/uploads/washi01.jpg">
+            <img class="float" src="/wp-content/uploads/washi02.jpg">
+            <img class="float" src="/wp-content/uploads/washi03.jpg">
         </div>
     </section>
 
