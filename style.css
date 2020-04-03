@@ -384,6 +384,7 @@ section#news div {
 }
 
 section#news div div {
+  display: block;
   flex: 1;
   margin: 24px 0;
 }
