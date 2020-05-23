@@ -69,5 +69,4 @@ if ( have_posts()) {
 </div>
     </section>
 </main>
-
 <?php get_footer(); ?>

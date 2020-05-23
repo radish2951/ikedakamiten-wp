@@ -3,6 +3,10 @@
 <main id="main-archive">
 <?php the_archive_description('<h1 class="title">', '</h1>'); ?>
 
+<ul class="monthly-list">
+<?php wp_get_archives( 'show_post_count=1' ); ?>
+</ul>
+
 <?php
 if ( have_posts() ) {
     while ( have_posts() ) {
