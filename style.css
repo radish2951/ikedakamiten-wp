@@ -8,6 +8,8 @@ Version: 1.0
 
 
 
+
+
 /*
  * Variables
  */
@@ -20,6 +22,9 @@ Version: 1.0
   --font-mincho: "Noto Serif JP", "Yu Mincho", serif;
   --font-gothic: "Yu Gothic", sans-serif;
 }
+
+
+
 
 
 /*
@@ -52,10 +57,6 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   margin: 0;
   padding: 0;
   font-weight: normal;
-}
-
-li {
-  line-height: 300%;
 }
 
 ul li {
@@ -111,6 +112,7 @@ header#header nav ul {
 header#header nav ul li {
   margin: 0 20px;
   font-size: 16px;
+  line-height: 300%;
 }
 
 @media screen and (max-width: 768px) {
@@ -170,9 +172,17 @@ header#header nav ul li {
 
 
 
+
+
+/*
+ * main-home
+ */
 main#main-home {
   font-family: var(--font-mincho);
 }
+
+
+
 
 
 /*
@@ -243,6 +253,8 @@ section#main-image #company-name p {
     line-height: 20px;
   }
 }
+
+
 
 
 
@@ -370,6 +382,8 @@ section.product .img-box img {
 
 
 
+
+
 /* News */
 section#news {
   width: 720px;
@@ -427,6 +441,10 @@ section#news article time {
 
 }
 
+
+
+
+
 /* Footer */
 footer#footer {
   font-family: var(--font-mincho);
@@ -455,9 +473,15 @@ footer#footer p {
 }
 
 
+
+
+
+/*
+ * main except home
+ */
 main:not(#main-home) {
   width: 100%;
-  max-width: 700px;
+  max-width: 1024px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -465,7 +489,7 @@ main:not(#main-home) {
 }
 
 main:not(#main-home) article {
-  font-family: var(--font-gothic);
+  font-family: var(--font-mincho);
   width: 100%;
   margin-bottom: 70px;
   display: flex;
