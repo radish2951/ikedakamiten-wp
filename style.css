@@ -489,6 +489,10 @@ main:not(#main-home) article p {
   line-height: 26px;
 }
 
+main:not(#main-home) article img {
+  height: auto;
+}
+
 main#main-singular h1 {
   font-size: 28px;
 }
@@ -583,3 +587,11 @@ main#main-singular.page-22 article figure iframe {
     height: auto;
   }
 }
+
+
+
+
+
+/* regular page */
+
+
